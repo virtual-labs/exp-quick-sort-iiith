@@ -89,61 +89,50 @@
 
 
     const myQuestions = [{
-            question: "1. Sample question1", ///// Write the question inside double quotes
+            question: "1. When does the worst case of Quicksort occur? ", ///// Write the question inside double quotes
             answers: {
-                a: "1", ///// Write the option 1 inside double quotes
-                b: "2", ///// Write the option 2 inside double quotes
- 		c: "3", ///// Write the option 3 inside double quotes
-                d: "4", ///// Write the option 4 inside double quotes
+                a: "Array is already sorted in same order. ", ///// Write the option 1 inside double quotes
+                b: " Array is already sorted in reverse order.", ///// Write the option 2 inside double quotes
+ 		c: "All elements are same (special case of case 1 and 2)", ///// Write the option 3 inside double quotes
+                d: "a, b and c", ///// Write the option 4 inside double quotes
             },
-            correctAnswer: "c" ///// Write the correct option inside double quotes
+            correctAnswer: "d" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "2.Sample question2",  ///// Write the question inside double quotes
+      question: "2. Which is the false statement for quick sort? ",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
-              },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
-    },
-
-{
-      question: "3. Sample question3",  ///// Write the question inside double quotes
-      answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
+        a: "The algorithm is recursive ",                  ///// Write the option 1 inside double quotes
+        b: "The algorithm requires extra storage for a temporary copy",                  ///// Write the option 2 inside double quotes
+	c: "It is an in-place sorting algorithm", ///// Write the option 3 inside double quotes
+        d: "a and c", ///// Write the option 4 inside double quotes
               },
       correctAnswer: "b"                ///// Write the correct option inside double quotes
     },
 
 {
-      question: "4.Sample question3",  ///// Write the question inside double quotes
+      question: "3. What kind of sorting algorithm does quick sort uses? ",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
-	e: "5 ", ///// Write the option 5 inside double quotes
+        a: "Stable sorting algorith",                  ///// Write the option 1 inside double quotes
+        b: "Unstable sorting algorithm",                  ///// Write the option 2 inside double quotes
+	 
               },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
     },
 
 {
-      question: "5. Sample question5",  ///// Write the question inside double quotes
+      question: "4. Randomized quicksort is an extension of quicksort where the pivot is chosen randomly. What is the worst case complexity of sorting n numbers using randomized quicksort? ",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3 ", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
-	e: "5", ///// Write the option 4 inside double quotes
+        a: "O(n) ",                  ///// Write the option 1 inside double quotes
+        b: "O(nlogn) ",                  ///// Write the option 2 inside double quotes
+	c: "O(n<sup>2</sup>)", ///// Write the option 3 inside double quotes
+        d: "O(n!)", ///// Write the option 4 inside double quotes
+	 
               },
-      correctAnswer: "d"                ///// Write the correct option inside double quotes
+      correctAnswer: "c"                ///// Write the correct option inside double quotes
     },
+
+
         
     ];
 
