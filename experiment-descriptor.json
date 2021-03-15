@@ -145,8 +145,8 @@
           "unit-type": "task",
           "label": "Post Test",
           "content-type": "video",
-          "source": "posttest.md",
-          "target": "posttest.html"
+          "source": "post-test.md",
+          "target": "post-test.html"
         },
     {
       "unit-type": "task",
