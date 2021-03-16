@@ -37,24 +37,25 @@ The sorting techniques/algorithms can be divided into following categories :
 
    - **Stable and Unstable Sorting Algorithm**
 
-    Stable Sorting Algorithm : If a sorting algorithm, after sorting the contents, does not change the sequence of similar content in which they appear, it is called stable sorting.
-    Example : Bubble Sort, Merge Sort and Radix Sort
+   Stable Sorting Algorithm : If a sorting algorithm, after sorting the contents, does not change the sequence of similar content in which they appear, it is called stable sorting.<br>
+   Example : Bubble Sort, Merge Sort and Radix Sort<br>
 
-    Unstable Sorting Algorithm : If a sorting algorithm, after sorting the contents, changes the sequence of similar content in which they appear, it is called unstable sorting.
+   Unstable Sorting Algorithm : If a sorting algorithm, after sorting the contents, changes the sequence of similar content in which they appear, it is called unstable sorting.<br>
     Example : Quick Sort, Selection Sort and Heap Sort
+    
    - **In-place and not In-place Sorting Algorithm**
+    In-place Sorting Algorithm : Sorting algorithms may require some extra space for comparison and temporary storage of few data elements. These algorithms do not require any extra space and sorting is said to happen in-place, or for example, within the array itself. This is called in-place sorting. <br>
+    Example : Quick Sort, Bubble Sort, Selection Sort and Heap Sort<br>
 
-    In-place Sorting Algorithm : Sorting algorithms may require some extra space for comparison and temporary storage of few data elements. These algorithms do not require any extra space and sorting is said to happen in-place, or for example, within the array itself. This is called in-place sorting.
-    Example : Quick Sort, Bubble Sort, Selection Sort and Heap Sort
-
-    Not In-place Sorting Algorithm : However, in some sorting algorithms, the program requires space which is more than or equal to the elements being sorted. Sorting which uses equal or more space is called not-in-place sorting.
-    Example : Merge Sort
+   Not In-place Sorting Algorithm : However, in some sorting algorithms, the program requires space which is more than or equal to the elements being sorted. Sorting which uses equal or more space is called not-in-place sorting. <br>
+   Example : Merge Sort
+   
    - **Adaptive and Non-adaptive Sorting Algorithm**
 
-    Adaptive Sorting Algorithm : A sorting algorithm is said to be adaptive, if it takes advantage of already 'sorted' elements in the list that is to be sorted. That is, while sorting if the source list has some element already sorted, adaptive algorithms will take this into account and will try not to re-order them. <br>
-    Example : Bubble Sort and Quick Sort
+   Adaptive Sorting Algorithm : A sorting algorithm is said to be adaptive, if it takes advantage of already 'sorted' elements in the list that is to be sorted. That is, while sorting if the source list has some element already sorted, adaptive algorithms will take this into account and will try not to re-order them. <br>
+   Example : Bubble Sort and Quick Sort<br>
 
-    Non-adaptive Sorting Algorithm : A sorting algorithm is said to be adaptive, if it takes advantage of already 'sorted' elements in the list that is to be sorted. That is, while sorting if the source list has some element already sorted, adaptive algorithms will take this into account and will try not to re-order them.<br>
+   Non-adaptive Sorting Algorithm : A sorting algorithm is said to be adaptive, if it takes advantage of already 'sorted' elements in the list that is to be sorted. That is, while sorting if the source list has some element already sorted, adaptive algorithms will take this into account and will try not to re-order them.<br>
     
  Example : Selection Sort, Merge Sort and Heap Sort
 
@@ -63,8 +64,8 @@ The sorting techniques/algorithms can be divided into following categories :
 Time complexity of an algorithm gives the measure of time taken by it to run as a function of the length of the input. Similarly, Space complexity of an algorithm quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input. Recall that suppose our input is an array of N elements, and our algorithm iterates through the array once, time complexity will be O(N). If I run two embedded loops to traverse the array N times, time complexity will be O(N2).
 
 ### Estimated Time for Pre Test Quiz
-
 10 minutes
+
 ### Instructions for Pre Test Quiz
 
    - Pretest includes questions on sorting, time complexity and space complexity.
