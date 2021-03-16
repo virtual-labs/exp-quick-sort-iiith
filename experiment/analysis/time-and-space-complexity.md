@@ -4,9 +4,9 @@ The time taken by quick sort to sort an array either in ascending or descending 
 
 Following are three cases which we come across while sorting an array with quick sort algorithm:
 
-    Best Case
-    Worst Case
-    Average Case
+  - Best Case
+  - Worst Case
+  - Average Case
 
 ### Best Case Time Complexity Analysis
 
