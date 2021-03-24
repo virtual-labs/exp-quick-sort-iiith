@@ -58,7 +58,7 @@
         },
         {
           "unit-type": "task",
-          "label": "Pivot Selection and Array Partitioning Demo",
+          "label": "Demo",
           "content-type": "simulation",
           "source": "simulation/partition.html",
           "target": "partition.html"
@@ -72,21 +72,21 @@
         },
         {
           "unit-type": "task",
-          "label": "Quick Sort : Demo",
+          "label": " Demo",
           "content-type": "simulation",
           "source": "simulation/quicksort-demo.html",
           "target": "quicksort-demo.html"
         },
 	{
           "unit-type": "task",
-          "label": "Quick Sort : Practice",
+          "label": " Practice",
           "content-type": "simulation",
           "source": "simulation/quicksort-practice.html",
           "target": "quicksort-practice.html"
         },
 	{
           "unit-type": "task",
-          "label": "Quick Sort : Exercise",
+          "label": " Exercise",
           "content-type": "simulation",
           "source": "simulation/quicksort-exercise.html",
           "target": "quicksort-exercise.html"
@@ -94,7 +94,7 @@
         
 	{
          "unit-type": "task",
-         "label": "Quick Sort Quiz",
+         "label": " Quiz",
          "content-type": "assesment",
          "source": "quick-sort-quiz.js",
          "target": "quick-sort-quiz.html"
@@ -134,7 +134,7 @@
         },
         {
           "unit-type": "task",
-          "label": "Analysis Quiz",
+          "label": " Quiz",
           "content-type": "assesment",
           "source": "analysis-quiz.js",
           "target": "analysis-quiz.html"
