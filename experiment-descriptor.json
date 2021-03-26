@@ -52,7 +52,7 @@
         },
         {
           "unit-type": "task",
-          "label": "Demo",
+          "label": "Demo : Partition",
           "content-type": "simulation",
           "source": "simulation/partition.html",
           "target": "partition.html"
