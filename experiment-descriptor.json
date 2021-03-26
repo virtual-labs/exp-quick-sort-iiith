@@ -37,18 +37,12 @@
         },
         {
           "unit-type": "task",
-          "label": "Overview",
+          "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-	{
-          "unit-type": "task",
-          "label": "Quick Sort Introduction",
-          "content-type": "video",
-          "source": "quick-sort-introduction.md",
-          "target": "quick-sort-introduction.html"
-        },
+	
         {
           "unit-type": "task",
           "label": "Pivot Selection and Array Partitioning",
