@@ -20,6 +20,13 @@
       "source": "recap.md",
       "target": "recap.html"
     },
+	{
+      "unit-type": "task",
+      "label": "Pretest",
+      "content-type": "assesment",
+      "source": "pretest.json",
+      "target": "pretest.html"
+    },
     {
       "unit-type": "lu",
       "label": "Quick Sort",
@@ -113,7 +120,13 @@
         }
       ]
     },
-       
+       {
+      "unit-type": "task",
+      "label": "Posttest",
+      "content-type": "assesment",
+      "source": "posttest.json",
+      "target": "posttest.html"
+    },
     {
       "unit-type": "task",
       "label": "Further Readings/References",

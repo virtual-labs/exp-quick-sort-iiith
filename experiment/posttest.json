@@ -1,1 +1,28 @@
-[{"question":"1. When does the worst case of Quicksort occur? ","answers":{"a":"Array is already sorted in same order. ","b":" Array is already sorted in reverse order.","c":"All elements are same (special case of case 1 and 2)","d":"a, b and c"},"correctAnswer":"d"},{"question":"2. Which is the false statement for quick sort? ","answers":{"a":"The algorithm is recursive ","b":"The algorithm requires extra storage for a temporary copy","c":"It is an in-place sorting algorithm","d":"a and c"},"correctAnswer":"b"},{"question":"3. What kind of sorting algorithm does quick sort uses? ","answers":{"a":"Stable sorting algorith","b":"Unstable sorting algorithm"},"correctAnswer":"b"},{"question":"4. Randomized quicksort is an extension of quicksort where the pivot is chosen randomly. What is the worst case complexity of sorting n numbers using randomized quicksort? ","answers":{"a":"O(n) ","b":"O(nlogn) ","c":"O(n<sup>2</sup>)","d":"O(n!)"},"correctAnswer":"c"}]
+[{
+	"question": "1.Quick-Sort is:",
+	"answers": {
+		"a": "A stable sorting algorithm",
+		"b": "Not a stable sorting algorithm",
+		"c": "Depends on the implementation"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "Given a random policy for choosing the pivot, when is the worst case time complexity of Quick Sort hit:",
+	"answers": {
+		"a": "When most of the chosen pivots are the smallest in the subarray",
+		"b": "When most of the chosen pivots are the biggest in the subarray",
+		"c": "When most of the chosen pivots are smaller than some and bigger than some",
+		"d": "a and b"
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "Function quick_sort(array) -> sorted-array:<br>    if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>           append array[i] to smaller_array<br>        else if (-----B-----):<br>            append array[i] to bigger_array<br>    return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)<br>Which of the following pairs can be selected simultaneously for blanks (A) and (B) in the quick-sort algorithm, and would cover all edge cases.",
+	"answers": {
+		"a": "array[i] < array[pivot] and array[i] >= array[pivot]",
+		"b": "array[i] <= array[pivot] and array[i] > array[pivot]",
+		"c": "array[i] < array[pivot] and array[i] > array[pivot]",
+		"d": "array[i] <= array[pivot] and array[i] >= array[pivot]",
+		"e": "a and b"
+	},
+	"correctAnswer": "e"
+}]
