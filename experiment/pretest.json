@@ -1,0 +1,89 @@
+[{
+	"question": "1.Which of the following arrays are sorted in ascending order:",
+	"answers": {
+		"a": "10, 14, 18, 22, 98, 101, 123",
+		"b": "8, 7, 6, 5, 4, 3, 2, 1",
+		"c": "54, 55, 56, 58, 61, 60, 65",
+		"d": "1, 2, 3, 4, 5, 6, 7, 8",
+		"e": " a and d"
+	},
+	"correctAnswer": "e"
+}, {
+	"question": "2. You are given the array [9, 5, 3, 8, 1, 2, 10, 11, 8, 12]. What is the index of 2 in it, if the array is 1-indexed?",
+	"answers": {
+		"a": "3",
+		"b": "4",
+		"c": "6",
+		"d": "8"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "3. You are given the array [9, 5, 3, 8, 1, 2, 10, 11, 8, 12]. Which of the following are the indices of the elements in the order they appear in the sorted array (arg-sort of the array).",
+	"answers": {
+		"a": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+		"b": "[7, 4, 3, 5, 1, 2, 8, 9, 6, 10]",
+		"c": "[5, 6, 3, 2, 4, 9, 1, 7, 8, 10]",
+		"d": "[5, 6, 3, 2, 9, 4, 1, 7, 8, 10]",
+		"e": " c and d"
+	},
+	"correctAnswer": "e"
+}, {
+	"question": "4. You are asked to sort an array. After the first iteration of quicksort (picking a median and partitioning the array), the result is [6, 4, 5, 3, 7, 9, 8, 11, 12]. Which of the following could have been the chosen pivot for this partitioning:",
+	"answers": {
+		"a": "7",
+		"b": "3",
+		"c": "11",
+		"d": "9",
+		"e": " 12",
+		"f": "a, c and e"
+	},
+	"correctAnswer": "f"
+}, {
+	"question": "5. Function quick_sort(array) -> sorted-array: <br>     if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>  append array[i] to smaller_array<br>      else if (-----B-----):<br>  append array[i] to bigger_array <br> return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)<br>Which of the following can be used to fill in the blank - (A) in the quick-sort algorithm",
+	"answers": {
+		"a": "array[i] < array[pivot]",
+		"b": "array[i] > array[pivot]",
+		"c": "array[i] == array[pivot]",
+		"d": "array[i] != array[pivot]"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "6. Function quick_sort(array) -> sorted-array: <br>     if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>  append array[i] to smaller_array<br>      else if (-----B-----):<br>  append array[i] to bigger_array <br> return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)<br>Which of the following can be used to fill in the blank - (B) in the quick-sort algorithm",
+	"answers": {
+		"a": "array[i] <= array[pivot]",
+		"b": "array[i] >= array[pivot]",
+		"c": "array[i] == array[pivot]",
+		"d": "array[i] != array[pivot]"
+	},
+	"correctAnswer": "b"
+}, {
+	"question": "7. An array of 16 elements is already sorted. We always pick the first element of the array at each iteration of the sorting process as the pivot. How many recursions (layers) will it take for quicksort to terminate.",
+	"answers": {
+		"a": "1",
+		"b": "2",
+		"c": "4",
+		"d": "8",
+		"e": "16"
+	},
+	"correctAnswer": "e"
+}, {
+	"question": "8. If an array of 16 elements is sorted in decreasing order initially (opposite to how we want to sort). We always pick the middle element (the higher of the two in the middle if there is a tie) of the array at each iteration of the sorting process as the pivot. How many iterations will it take for quicksort to terminate?",
+	"answers": {
+		"a": "1",
+		"b": "2",
+		"c": "4",
+		"d": "8",
+		"e": "16"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "9. Bozo-sort is an algorithm where we randomly permute the array (any order of elements in the array is equally likely). Then we check if the array is sorted, if yes then we return the array, if not then we repeat the process. What is the average case complexity of this method?",
+	"answers": {
+		"a": "O(n)",
+		"b": "O(n^2)",
+		"c": "O(e^n)",
+		"d": "O(n!)",
+		"e": "Infinity"
+	},
+	"correctAnswer": "d"
+}]
