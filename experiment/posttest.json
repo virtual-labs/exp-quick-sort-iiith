@@ -7,7 +7,7 @@
 	},
 	"correctAnswer": "b"
 }, {
-	"question": "Given a random policy for choosing the pivot, when is the worst case time complexity of Quick Sort hit:",
+	"question": "2. Given a random policy for choosing the pivot, when is the worst case time complexity of Quick Sort hit:",
 	"answers": {
 		"a": "When most of the chosen pivots are the smallest in the subarray",
 		"b": "When most of the chosen pivots are the biggest in the subarray",
@@ -16,7 +16,7 @@
 	},
 	"correctAnswer": "d"
 }, {
-	"question": "Function quick_sort(array) -> sorted-array:<br>    if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>           append array[i] to smaller_array<br>        else if (-----B-----):<br>            append array[i] to bigger_array<br>    return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)<br>Which of the following pairs can be selected simultaneously for blanks (A) and (B) in the quick-sort algorithm, and would cover all edge cases.",
+	"question": "3. Function quick_sort(array) -> sorted-array:<br>    if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>           append array[i] to smaller_array<br>        else if (-----B-----):<br>            append array[i] to bigger_array<br>    return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)<br>Which of the following pairs can be selected simultaneously for blanks (A) and (B) in the quick-sort algorithm, and would cover all edge cases.",
 	"answers": {
 		"a": "array[i] < array[pivot] and array[i] >= array[pivot]",
 		"b": "array[i] <= array[pivot] and array[i] > array[pivot]",
