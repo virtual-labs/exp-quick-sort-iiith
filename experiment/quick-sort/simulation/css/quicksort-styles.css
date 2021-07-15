@@ -19,9 +19,7 @@
   height: 41px;
 }
 
-#question-holder {
-  font-size: 1.5vw;
-}
+/* #question-holder {} */
 
 .avcontainer{
   overflow: visible;
