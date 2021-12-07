@@ -39,7 +39,7 @@
 	},
 	"correctAnswer": "f"
 }, {
-	"question": "5. Function quick_sort(array) -> sorted-array: <br>     if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>  append array[i] to smaller_array<br>      else if (-----B-----):<br>  append array[i] to bigger_array <br> return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)<br>Which of the following can be used to fill in the blank - (A) in the quick-sort algorithm",
+	"question": "5. Function <pre><code>quick_sort(array) -> sorted-array: <br>     if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>  append array[i] to smaller_array<br>      else if (-----B-----):<br>  append array[i] to bigger_array <br> return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)<br></code></pre>Which of the following can be used to fill in the blank - (A) in the quick-sort algorithm",
 	"answers": {
 		"a": "array[i] < array[pivot]",
 		"b": "array[i] > array[pivot]",
@@ -48,7 +48,7 @@
 	},
 	"correctAnswer": "a"
 }, {
-	"question": "6. Function quick_sort(array) -> sorted-array: <br>     if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>  append array[i] to smaller_array<br>      else if (-----B-----):<br>  append array[i] to bigger_array <br> return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)<br>Which of the following can be used to fill in the blank - (B) in the quick-sort algorithm",
+	"question": "6. Function <pre><code>quick_sort(array) -> sorted-array: <br>     if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>  append array[i] to smaller_array<br>      else if (-----B-----):<br>  append array[i] to bigger_array <br> return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)<br></code></pre>Which of the following can be used to fill in the blank - (B) in the quick-sort algorithm",
 	"answers": {
 		"a": "array[i] <= array[pivot]",
 		"b": "array[i] >= array[pivot]",
