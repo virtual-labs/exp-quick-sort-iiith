@@ -49,23 +49,48 @@
 }
 
 .left {
-   background-color: #0000ff;
+  border-radius: 0%;
+  width: 3.2vw;
+  margin-top: 2.8%;
+  height: 0.35vw;
+  border: 0vw solid grey;
+  background-color: #0000ff;
 }
 
 .right {
-   background-color: #ff0000;
+  background-color: #ff0000;
+  border-radius: 0%;
+  width: 3.2vw;
+  margin-top: 2.8%;
+  height: 0.35vw;
+  border: 0vw solid grey;
 }
 
 .merge {
+  border-radius: 0%;
+  width: 3.2vw;
+  margin-top: 2.8%;
+  height: 0.35vw;
+  border: 0vw solid grey;
    background-color: #cc00ff;
 }
 
 .selected-pivot {
+  border-radius: 0%;
+  width: 3.2vw;
+  margin-top: 2.8%;
+  height: 0.35vw;
+  border: 0vw solid grey;
    background-color: #ddddff;
 }
 
 .swapping {
-   background-color: #f99b9b;
+  border-radius: 0%;
+  width: 3.2vw;
+  margin-top: 2.8%;
+  height: 0.35vw;
+  border: 0vw solid grey;
+  background-color: #f99b9b;
 }
 
 .comment-box {
