@@ -3,14 +3,39 @@
     "experiment name": "Experiment Name",
     "problems": [
         {
-            "problem name": "Quick Sort",
+            "problem name": "Basic Quick Sort",
             "description": "Implement the quick sort algorithm for the given input array",
             "inputs": [
                 [2,5,1,15,22,19,100,81,70,149]
             ],
             "expected": [1,2,5,15,19,22,70,81,100,149],
             "inputs description": "Input consists of an array of unsorted array - inp1. It may be of arbitrary length.",
-            "expected description": "An array of numbers Eg. 1,2,4,5 sorted in ascending orders"
+            "expected description": "An array of numbers e.g. 1,2,4,5 sorted in ascending orders"
+        },
+        {
+            "problem name": "Partition Around Pivot",
+            "description": "Implement a function that partitions an array around a pivot value. Rearrange the array so that all elements less than the pivot appear before it, and all elements greater appear after it.",
+            "inputs": [
+                [4, 7, 2, 1, 5],
+                3
+            ],
+            "expected": [2, 1, 4, 7, 5],
+            "inputs description": "Input consists of an array of integers and a pivot value.",
+            "expected description": "The modified array where elements < pivot are to the left, and elements > pivot are to the right.",
+            "difficulty": "beginner"
+        },
+        {
+            "problem name": "In-place Quick Sort with Stack",
+            "description": "Implement quick sort to sort an array in-place without using recursion. Use a stack data structure to manage sorting tasks.",
+            "inputs": [
+                [7, 2, 9, 1, 5, 6, 3, 8, 4]
+            ],
+            "expected": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "inputs description": "Input consists of an array of integers.",
+            "expected description": "The sorted array using in-place quick sort with a stack.",
+            "difficulty": "advanced"
         }
+
+
     ]
 }
