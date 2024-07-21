@@ -10,7 +10,8 @@
             ],
             "expected": [1,2,5,15,19,22,70,81,100,149],
             "inputs description": "Input consists of an array of unsorted array - inp1. It may be of arbitrary length.",
-            "expected description": "An array of numbers e.g. 1,2,4,5 sorted in ascending orders"
+            "expected description": "An array of numbers e.g. 1,2,4,5 sorted in ascending orders",
+            "difficulty": "beginner"
         },
         {
             "problem name": "Partition Around Pivot",
