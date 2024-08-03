@@ -14,16 +14,15 @@
             "difficulty": "beginner"
         },
         {
-            "problem name": "Partition Around Pivot",
-            "description": "Implement a function that partitions an array around a pivot value. Rearrange the array so that all elements less than the pivot appear before it, and all elements greater appear after it.",
+            "problem name": "Optimized Quick Sort with Median of Three",
+            "description": "Implement the quicksort algorithm with an optimized pivot selection using the median-of-three method. The function should partition the array around the pivot, then recursively sort the subarrays. Additionally, handle duplicate values efficiently. The median-of-three method selects the pivot as the median of the first, middle, and last elements of the array segment to improve the performance of quicksort by avoiding worst-case scenarios.",
             "inputs": [
-                [4, 7, 2, 1, 5],
-                3
+                [4, 7, 2, 1, 5, 2, 6, 8, 9, 5]
             ],
-            "expected": [2, 1, 4, 7, 5],
-            "inputs description": "Input consists of an array of integers and a pivot value.",
-            "expected description": "The modified array where elements < pivot are to the left, and elements > pivot are to the right.",
-            "difficulty": "beginner"
+            "expected": [1, 2, 2, 4, 5, 5, 6, 7, 8, 9],
+            "inputs description": "Input consists of an array of integers.",
+            "expected description": "A sorted array in ascending order.",
+            "difficulty": "intermediate"
         },
         {
             "problem name": "In-place Quick Sort with Stack",
