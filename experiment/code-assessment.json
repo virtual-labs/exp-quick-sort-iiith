@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "experiment name": "Experiment Name",
+    "problems": [
+        {
+            "problem name": "Basic Quick Sort",
+            "description": "Implement the quick sort algorithm for the given input array",
+            "inputs": [
+                [2,5,1,15,22,19,100,81,70,149]
+            ],
+            "expected": [1,2,5,15,19,22,70,81,100,149],
+            "inputs description": "Input consists of an array of unsorted array - inp1. It may be of arbitrary length.",
+            "expected description": "An array of numbers e.g. 1,2,4,5 sorted in ascending orders",
+            "difficulty": "beginner"
+        },
+        {
+            "problem name": "Optimized Quick Sort with Median of Three",
+            "description": "Implement the quicksort algorithm with an optimized pivot selection using the median-of-three method. The function should partition the array around the pivot, then recursively sort the subarrays. Additionally, handle duplicate values efficiently. The median-of-three method selects the pivot as the median of the first, middle, and last elements of the array segment to improve the performance of quicksort by avoiding worst-case scenarios.",
+            "inputs": [
+                [4, 7, 2, 1, 5, 2, 6, 8, 9, 5]
+            ],
+            "expected": [1, 2, 2, 4, 5, 5, 6, 7, 8, 9],
+            "inputs description": "Input consists of an array of integers.",
+            "expected description": "A sorted array in ascending order.",
+            "difficulty": "intermediate"
+        },
+        {
+            "problem name": "In-place Quick Sort with Stack",
+            "description": "Implement quick sort to sort an array in-place without using recursion. Use a stack data structure to manage sorting tasks.",
+            "inputs": [
+                [7, 2, 9, 1, 5, 6, 3, 8, 4]
+            ],
+            "expected": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "inputs description": "Input consists of an array of integers.",
+            "expected description": "The sorted array using in-place quick sort with a stack.",
+            "difficulty": "advanced"
+        }
+
+
+    ]
+}
