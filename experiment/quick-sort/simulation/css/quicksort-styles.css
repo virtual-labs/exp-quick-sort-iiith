@@ -21,31 +21,86 @@
 
 /* #question-holder {} */
 
-.avcontainer{
+.avcontainer {
   overflow: visible;
 }
 
 /* Styles to resize array boxes */
 .jsavhorizontalarray .jsavnode {
-    line-height: 50px !important;
-    min-width: 50px !important;
-    max-width: 50px !important;
-    min-height: 50px !important;
-    max-height: 50px !important;
+  line-height: 50px !important;
+  min-width: 50px !important;
+  max-width: 50px !important;
+  min-height: 50px !important;
+  max-height: 50px !important;
+}
+
+@media (max-width: 768px) {
+  .jsavhorizontalarray .jsavnode {
+    line-height: 30px !important;
+    min-width: 30px !important;
+    max-width: 30px !important;
+    min-height: 30px !important;
+    max-height: 30px !important;
+    font-size: 12px !important;
+  }
+  .jsavcanvas {
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    overflow-x: auto !important;
+  }
+  #container {
+    padding: 0 !important;
+    width: 100vw !important;
+    min-width: 100vw !important;
+    overflow-x: auto !important;
+  }
 }
 
 /* Styles to position arrows */
 .jsavindex.jsavarrow::before {
-    left: 18px;
+  left: 18px;
 }
 
 #legend-comment-wrapper {
-    padding-top: 2%;
-    height: 27vh;
+  padding-top: 2%;
+  height: 27vh;
+}
+
+@media (max-width: 768px) {
+  #legend-comment-wrapper {
+    height: auto;
+    padding-bottom: 2%;
+    width: 100vw !important;
+    display: block;
+    margin-bottom: 0;
+  }
+  .jsavcanvas {
+    margin-top: 0 !important;
+  }
+  .comment-box {
+    margin-bottom: 2%;
+    width: 100vw !important;
+    display: block;
+    margin-top: 0;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #legend-comment-wrapper {
+    order: 1;
+  }
+  .jsavcontainer {
+    order: 2;
+  }
+  .comment-box {
+    order: 3;
+  }
 }
 
 .legend {
-    float: left;
+  float: left;
 }
 
 .left {
@@ -94,21 +149,31 @@
 }
 
 .comment-box {
-    margin: auto;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
 }
 
 .slidecontainer {
-    padding-top: 0%;
+  padding-top: 0%;
 }
 
 .buttons-wrapper {
-    text-align: center;
-    padding-top: 2%;
+  text-align: center;
+  padding-top: 2%;
 }
 
-.legend { list-style: none; }
-.legend li { padding-bottom : 1.5vw; width: 20vw; }
-.legend span { border: 0vw solid black; float: left; }
+.legend {
+  list-style: none;
+}
+.legend li {
+  padding-bottom: 1.5vw;
+  width: 20vw;
+}
+.legend span {
+  border: 0vw solid black;
+  float: left;
+}
 
 /* Media query for small screens */
 @media (max-width: 768px) {
