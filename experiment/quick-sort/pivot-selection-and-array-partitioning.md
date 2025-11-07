@@ -1,37 +1,114 @@
-### How to Select Pivot?
+### Pivot Selection in QuickSort
 
-QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot.
+QuickSort is a **Divide and Conquer algorithm** that works by selecting a 'pivot' element and partitioning the array around it. The choice of pivot significantly affects the algorithm's performance.
 
-There are many different versions of Quick Sort that pick pivot in different ways :
+#### Common Pivot Selection Strategies
 
-   - Always pick first element as pivot
-   - Always pick last element as pivot
-   - Pick a random element as pivot
-   - Pick median as pivot
+1. **First Element as Pivot**
 
-### Pictorial Representation of Pivot Selection 
-<img src="images/partition-example.png"/>
-### Partitioning of the Array
+   - Simple to implement
+   - Poor performance on already sorted arrays
 
-The key process in Quick Sort is partition. Targets of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller and equal elements (smaller than or equal to x) before x, and put all greater elements (greater than x) after x.
+2. **Last Element as Pivot**
 
-Partitioning array around the pivot means we divide the array into three parts
+   - Most commonly used in implementations
+   - Easy to understand and code
 
-   - **Partition-1** : Contains all elements of that array less than or equal to pivot
-   - **Partition-2** : Contains only pivot
-   - **Partition-3** : Contains all elements of that array greater than pivot
+3. **Random Element as Pivot**
 
-### Steps to Partition an Unsorted Array
+   - Provides good average-case performance
+   - Helps avoid worst-case scenarios
 
-   - STEP 1 : First select a pivot in an unsorted array as shown above in the pivot selection section
-   - STEP 2 : Initialize the low index and high index. Low index represents the first index of an array. High index represents the last index of an array.
-   - STEP 3 : Start comparing low index element and high index element with the pivot. First start comparing with low index element with pivot element.
-      - If low index element is less than the pivot element, increment low index otherwise start comparing high index element with pivot element.
-      - If high index element is greater than pivot element, decrement high index otherwise stop.
-   - STEP 4 : Compare low index with high index.
-      - If low index is less than high index swap low index element with the high index element.
-      - If low index is greater than high index swap high index element with pivot index element.
-   - STEP 5 : Repeat the steps 1 to 4 recursively for the sub-arrays until we get a sorted array.
+4. **Median as Pivot**
+   - Best theoretical choice
+   - Requires additional computation to find median
 
-### Pictorial Representation of Partitioning Unsorted Array 
-<img src="images/pivot-selection.png"/>
+#### Pictorial Representation of Pivot Selection
+
+<img src="images/partition-example.png" alt="Pivot Selection Examples"/>
+
+---
+
+### Array Partitioning Process
+
+**Goal:** Given an array and a pivot element, rearrange the array so that:
+
+- All elements ≤ pivot are on the left
+- The pivot is in its correct sorted position
+- All elements > pivot are on the right
+
+#### Three-Part Division
+
+After partitioning, the array is divided into three sections:
+
+| **Partition 1**  | **Partition 2** | **Partition 3**  |
+| ---------------- | --------------- | ---------------- |
+| Elements ≤ pivot | Pivot element   | Elements > pivot |
+
+---
+
+### Partitioning Algorithm Steps
+
+#### Step 1: Select Pivot
+
+Choose a pivot using one of the strategies mentioned above.
+
+#### Step 2: Initialize Pointers
+
+- **Low index (i)**: Points to the first element
+- **High index (j)**: Points to the last element (excluding pivot if it's the last element)
+
+#### Step 3: Compare and Move Pointers
+
+**From the left (low index):**
+
+- If `array[i] ≤ pivot`, move `i` forward
+- If `array[i] > pivot`, stop
+
+**From the right (high index):**
+
+- If `array[j] > pivot`, move `j` backward
+- If `array[j] ≤ pivot`, stop
+
+#### Step 4: Swap or Place Pivot
+
+- **If `i < j`**: Swap `array[i]` and `array[j]`, then repeat Step 3
+- **If `i ≥ j`**: Partitioning is complete, place pivot at correct position
+
+#### Step 5: Recursive Calls
+
+Apply QuickSort recursively to both sub-arrays (left and right of the pivot).
+
+---
+
+### Example Walkthrough
+
+**Initial Array:** `[64, 34, 25, 12, 22, 11, 90]`  
+**Pivot:** `90` (last element)
+
+1. **Initialize:** `i = 0`, `j = 5` (pointing to 11)
+2. **Compare:** Move pointers until elements need swapping
+3. **Partition:** After processing: `[64, 34, 25, 12, 22, 11, 90]`
+4. **Result:** All elements ≤ 90 are on the left, 90 is in correct position
+
+#### Pictorial Representation of Partitioning Process
+
+<img src="images/pivot-selection.png" alt="Array Partitioning Steps"/>
+
+---
+
+### Key Points to Remember
+
+✅ **Partitioning is the core operation** in QuickSort  
+✅ **Pivot choice affects performance** - random selection often works well  
+✅ **In-place partitioning** uses constant extra space  
+✅ **After partitioning**, pivot is in its final sorted position  
+✅ **Recursively apply** to sub-arrays on both sides of pivot
+
+---
+
+### Time Complexity
+
+- **Best/Average Case:** O(n log n) - when pivot divides array roughly equally
+- **Worst Case:** O(n²) - when pivot is always the smallest/largest element
+- **Space Complexity:** O(log n) - due to recursive call stack
