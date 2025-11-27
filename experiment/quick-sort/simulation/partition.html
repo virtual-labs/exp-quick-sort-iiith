@@ -120,9 +120,19 @@
     <script>
       function handlers() {
         $("#start").click(function () {
+          if (commentsQueue.length === 0) {
+            displayComment("Animation complete. Click Reset to start again.");
+            return;
+          }
           this.value = "Next";
           $(".jsavforward").click();
           displayComment(commentsQueue.shift());
+
+          // Check if this was the last step
+          if (commentsQueue.length === 0) {
+            $("#start").prop("disabled", true).css("opacity", "0.5");
+            displayComment("Animation complete. Click Reset to start again.");
+          }
         });
 
         $("#resetArt").click(function () {
