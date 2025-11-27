@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "experiment name": "Quick Sort Implementation",
+  "problems": [
+    {
+      "problem name": "Basic Quick Sort",
+      "description": "Implement the basic Quick Sort algorithm to sort an array in ascending order. Select a pivot element (use the last element), partition the array so smaller elements are left of pivot and larger elements are right of pivot, then recursively sort both partitions. Example: [2,5,1,15,22,19,100,81,70,149] should become [1,2,5,15,19,22,70,81,100,149]. Only JavaScript is allowed.",
+      "inputs": [[2, 5, 1, 15, 22, 19, 100, 81, 70, 149]],
+      "expected": [1, 2, 5, 15, 19, 22, 70, 81, 100, 149],
+      "inputs description": "Input consists of an array of unsorted integers. The array may be of arbitrary length.",
+      "expected description": "A sorted array in ascending order, e.g., [1, 2, 4, 5]",
+      "difficulty": "beginner"
+    },
+    {
+      "problem name": "Optimized Quick Sort with Median of Three",
+      "description": "Implement Quick Sort using median-of-three pivot selection for better performance. Find the median of the first, middle, and last elements to use as pivot. This prevents O(n²) worst-case performance on sorted arrays and handles duplicates efficiently. Example: [4,7,2,1,5,2,6,8,9,5] should become [1,2,2,4,5,5,6,7,8,9]. Only JavaScript is allowed.",
+      "inputs": [[4, 7, 2, 1, 5, 2, 6, 8, 9, 5]],
+      "expected": [1, 2, 2, 4, 5, 5, 6, 7, 8, 9],
+      "inputs description": "Input consists of an array of integers which may contain duplicate values.",
+      "expected description": "A sorted array in ascending order with duplicates properly positioned.",
+      "difficulty": "intermediate"
+    },
+    {
+      "problem name": "In-place Quick Sort with Stack",
+      "description": "Implement Quick Sort using an iterative approach with a stack instead of recursion. Use a stack to store start and end indices of sub-arrays to avoid recursive calls and prevent stack overflow on large datasets. Push initial bounds (0, array.length-1) to stack, then repeatedly pop bounds, partition the sub-array, and push new bounds until stack is empty. Example: [7,2,9,1,5,6,3,8,4] should become [1,2,3,4,5,6,7,8,9]. Only JavaScript is allowed.",
+      "inputs": [[7, 2, 9, 1, 5, 6, 3, 8, 4]],
+      "expected": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "inputs description": "Input consists of an array of integers to be sorted using iterative quick sort.",
+      "expected description": "The sorted array in ascending order, achieved using in-place quick sort with a stack.",
+      "difficulty": "advanced"
+    }
+  ]
+}
