@@ -1,0 +1,253 @@
+#container {
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow-y: visible;
+  overflow-x: hidden;
+  padding-top: 2%;
+  border: 0;
+  background-color: white !important;
+}
+
+#input-holder {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+#arraysize {
+  height: 41px;
+}
+
+/* #question-holder {} */
+
+.avcontainer {
+  overflow: visible;
+}
+
+.jsavdisabled {
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* Styles to resize array boxes */
+.jsavhorizontalarray .jsavnode {
+  line-height: 50px !important;
+  min-width: 50px !important;
+  max-width: 50px !important;
+  min-height: 50px !important;
+  max-height: 50px !important;
+}
+
+@media (max-width: 768px) {
+  .jsavhorizontalarray .jsavnode {
+    line-height: 30px !important;
+    min-width: 30px !important;
+    max-width: 30px !important;
+    min-height: 30px !important;
+    max-height: 30px !important;
+    font-size: 12px !important;
+  }
+  .jsavcanvas {
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    overflow-x: auto !important;
+  }
+  #container {
+    padding: 0 !important;
+    width: 100vw !important;
+    min-width: 100vw !important;
+    overflow-x: auto !important;
+  }
+}
+
+/* Styles to position arrows */
+.jsavindex.jsavarrow::before {
+  left: 18px;
+}
+
+#legend-comment-wrapper {
+  padding-top: 2%;
+  height: 27vh;
+}
+
+@media (max-width: 768px) {
+  #legend-comment-wrapper {
+    height: auto;
+    padding-bottom: 2%;
+    width: 100vw !important;
+    display: block;
+    margin-bottom: 0;
+  }
+  .jsavcanvas {
+    margin-top: 0 !important;
+  }
+  .comment-box {
+    margin-bottom: 2%;
+    width: 100vw !important;
+    display: block;
+    margin-top: 0;
+  }
+
+  /* Default observations (no restriction) */
+  .comment-box {
+    overflow: visible;
+  }
+
+  .comment-box.qs-model-active {
+    max-height: 260px; /* desktop-safe */
+    overflow-y: auto;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #legend-comment-wrapper {
+    order: 1;
+  }
+  .jsavcontainer {
+    order: 2;
+  }
+  .comment-box {
+    order: 3;
+  }
+}
+
+.legend {
+  float: left;
+}
+
+.left {
+  border-radius: 0%;
+  width: 3.2vw;
+  margin-top: 2.8%;
+  height: 0.35vw;
+  border: 0vw solid grey;
+  background-color: #0000ff;
+}
+
+.right {
+  background-color: #ff0000;
+  border-radius: 0%;
+  width: 3.2vw;
+  margin-top: 2.8%;
+  height: 0.35vw;
+  border: 0vw solid grey;
+}
+
+.merge {
+  border-radius: 0%;
+  width: 3.2vw;
+  margin-top: 2.8%;
+  height: 0.35vw;
+  border: 0vw solid grey;
+  background-color: #cc00ff;
+}
+
+.selected-pivot {
+  border-radius: 0%;
+  width: 3.2vw;
+  margin-top: 2.8%;
+  height: 0.35vw;
+  border: 0vw solid grey;
+  background-color: #ddddff;
+}
+
+.swapping {
+  border-radius: 0%;
+  width: 3.2vw;
+  margin-top: 2.8%;
+  height: 0.35vw;
+  border: 0vw solid grey;
+  background-color: #f99b9b;
+}
+
+.comment-box {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+.slidecontainer {
+  padding-top: 0%;
+}
+
+.buttons-wrapper {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.legend {
+  list-style: none;
+}
+.legend li {
+  padding-bottom: 1.5vw;
+  width: 20vw;
+}
+.legend span {
+  border: 0vw solid black;
+  float: left;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  #legend-comment-wrapper {
+    height: auto;
+    padding-bottom: 2%;
+  }
+
+  .comment-box {
+    margin-bottom: 2%;
+  }
+
+  .buttons-wrapper {
+    padding-top: 4%;
+  }
+}
+
+/* Small screen – portrait view ONLY */
+@media (max-width: 768px) and (orientation: portrait) {
+  #legend-comment-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .legend {
+    order: 1;
+    width: 100%;
+  }
+
+  .comment-box {
+    width: 100%;
+    order: 2;
+    margin-top: 12px;
+  }
+
+  .jsavcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Move visualization above observations */
+  #jsav {
+    order: 1;
+  }
+}
+
+/* Model Answer text formatting */
+.qs-model-answer {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0.5rem;
+}
+
+.qs-model-answer b {
+  color: #1a237e;
+}
+
+.qs-model-answer .step {
+  margin-bottom: 0.4rem;
+}

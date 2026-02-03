@@ -1,0 +1,678 @@
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/analysis/analysis-quiz.js
+  18:19  warning  'letter' is not defined  no-undef
+  22:74  warning  'letter' is not defined  no-undef
+  23:14  warning  'letter' is not defined  no-undef
+  24:38  warning  'letter' is not defined  no-undef
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/quick-sort-quiz.js
+  18:19  warning  'letter' is not defined  no-undef
+  22:74  warning  'letter' is not defined  no-undef
+  23:14  warning  'letter' is not defined  no-undef
+  24:38  warning  'letter' is not defined  no-undef
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/simulation/js/quicksort-exercise.js
+    2:1   warning  'comments' is not defined                                 no-undef
+   21:1   warning  'commentsQueue' is not defined                            no-undef
+   24:3   warning  '$' is not defined                                        no-undef
+   29:10  warning  'alert' is already defined as a built-in global variable  no-redeclare
+   30:1   warning  '$' is not defined                                        no-undef
+   37:7   warning  'exerciseCompleted' is assigned a value but never used    no-unused-vars
+   46:3   warning  '$' is not defined                                        no-undef
+   47:3   warning  '$' is not defined                                        no-undef
+  294:23  warning  'JSAV' is not defined                                     no-undef
+  295:7   warning  '$' is not defined                                        no-undef
+  297:24  warning  'JSAV' is not defined                                     no-undef
+  298:7   warning  '$' is not defined                                        no-undef
+  403:5   warning  'exercise' is not defined                                 no-undef
+  459:5   warning  'exercise' is not defined                                 no-undef
+  476:5   warning  'exercise' is not defined                                 no-undef
+  504:11  warning  'obs' is already defined                                  no-redeclare
+  516:3   warning  '$' is not defined                                        no-undef
+  517:3   warning  '$' is not defined                                        no-undef
+  518:3   warning  '$' is not defined                                        no-undef
+  545:14  warning  'JSAV' is not defined                                     no-undef
+  545:19  warning  '$' is not defined                                        no-undef
+  584:15  warning  '$' is not defined                                        no-undef
+  587:3   warning  'exercise' is not defined                                 no-undef
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/simulation/js/quicksortAV.js
+    2:1   warning  'comments' is not defined                                   no-undef
+   23:1   warning  'commentsQueue' is not defined                              no-undef
+   25:7   warning  'displayComment' is assigned a value but never used         no-unused-vars
+   26:3   warning  '$' is not defined                                          no-undef
+   29:10  warning  'alert' is already defined as a built-in global variable    no-redeclare
+   29:10  warning  'alert' is defined but never used                           no-unused-vars
+   29:29  warning  'console' is already defined as a built-in global variable  no-redeclare
+   29:29  warning  'console' is defined but never used                         no-unused-vars
+   30:1   warning  '$' is not defined                                          no-undef
+   36:7   warning  'interpret' is assigned a value but never used              no-unused-vars
+   54:16  warning  'JSAV' is not defined                                       no-undef
+   54:21  warning  '$' is not defined                                          no-undef
+   64:7   warning  'commentsQueue' is not defined                              no-undef
+   64:26  warning  'comments' is not defined                                   no-undef
+   71:5   warning  'commentsQueue' is not defined                              no-undef
+   71:24  warning  'comments' is not defined                                   no-undef
+   78:5   warning  'commentsQueue' is not defined                              no-undef
+   78:24  warning  'comments' is not defined                                   no-undef
+   83:5   warning  'commentsQueue' is not defined                              no-undef
+   83:24  warning  'comments' is not defined                                   no-undef
+   91:5   warning  'commentsQueue' is not defined                              no-undef
+   91:24  warning  'comments' is not defined                                   no-undef
+   95:5   warning  'commentsQueue' is not defined                              no-undef
+   95:24  warning  'comments' is not defined                                   no-undef
+  106:7   warning  'commentsQueue' is not defined                              no-undef
+  106:26  warning  'comments' is not defined                                   no-undef
+  113:7   warning  'commentsQueue' is not defined                              no-undef
+  113:26  warning  'comments' is not defined                                   no-undef
+  122:7   warning  'commentsQueue' is not defined                              no-undef
+  122:26  warning  'comments' is not defined                                   no-undef
+  129:7   warning  'commentsQueue' is not defined                              no-undef
+  129:26  warning  'comments' is not defined                                   no-undef
+  141:7   warning  'commentsQueue' is not defined                              no-undef
+  141:26  warning  'comments' is not defined                                   no-undef
+  145:9   warning  'commentsQueue' is not defined                              no-undef
+  145:28  warning  'comments' is not defined                                   no-undef
+  154:7   warning  'commentsQueue' is not defined                              no-undef
+  154:26  warning  'comments' is not defined                                   no-undef
+  159:7   warning  'commentsQueue' is not defined                              no-undef
+  159:26  warning  'comments' is not defined                                   no-undef
+  164:9   warning  'commentsQueue' is not defined                              no-undef
+  164:28  warning  'comments' is not defined                                   no-undef
+  174:9   warning  'commentsQueue' is not defined                              no-undef
+  174:28  warning  'comments' is not defined                                   no-undef
+  178:9   warning  'commentsQueue' is not defined                              no-undef
+  178:28  warning  'comments' is not defined                                   no-undef
+  184:9   warning  'commentsQueue' is not defined                              no-undef
+  184:28  warning  'comments' is not defined                                   no-undef
+  201:3   warning  '$' is not defined                                          no-undef
+  202:3   warning  '$' is not defined                                          no-undef
+  207:3   warning  '$' is not defined                                          no-undef
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/simulation/js/quicksortCON.js
+    2:1   warning  'comments' is not defined                            no-undef
+   33:1   warning  'commentsQueue' is not defined                       no-undef
+   35:7   warning  'displayComment' is assigned a value but never used  no-unused-vars
+   36:3   warning  '$' is not defined                                   no-undef
+   40:1   warning  '$' is not defined                                   no-undef
+   43:7   warning  'interpret' is assigned a value but never used       no-unused-vars
+   46:16  warning  'JSAV' is not defined                                no-undef
+   52:3   warning  'commentsQueue' is not defined                       no-undef
+   52:22  warning  'comments' is not defined                            no-undef
+   62:3   warning  'commentsQueue' is not defined                       no-undef
+   62:22  warning  'comments' is not defined                            no-undef
+   67:3   warning  'commentsQueue' is not defined                       no-undef
+   67:22  warning  'comments' is not defined                            no-undef
+   72:3   warning  'commentsQueue' is not defined                       no-undef
+   72:22  warning  'comments' is not defined                            no-undef
+   79:3   warning  'commentsQueue' is not defined                       no-undef
+   79:22  warning  'comments' is not defined                            no-undef
+   86:3   warning  'commentsQueue' is not defined                       no-undef
+   86:22  warning  'comments' is not defined                            no-undef
+   91:3   warning  'commentsQueue' is not defined                       no-undef
+   91:22  warning  'comments' is not defined                            no-undef
+  103:3   warning  'commentsQueue' is not defined                       no-undef
+  103:22  warning  'comments' is not defined                            no-undef
+  121:3   warning  'commentsQueue' is not defined                       no-undef
+  121:22  warning  'comments' is not defined                            no-undef
+  126:3   warning  'commentsQueue' is not defined                       no-undef
+  126:22  warning  'comments' is not defined                            no-undef
+  131:3   warning  'commentsQueue' is not defined                       no-undef
+  131:22  warning  'comments' is not defined                            no-undef
+  140:3   warning  'commentsQueue' is not defined                       no-undef
+  140:22  warning  'comments' is not defined                            no-undef
+  152:3   warning  'commentsQueue' is not defined                       no-undef
+  152:22  warning  'comments' is not defined                            no-undef
+  157:3   warning  'commentsQueue' is not defined                       no-undef
+  157:22  warning  'comments' is not defined                            no-undef
+  167:3   warning  'commentsQueue' is not defined                       no-undef
+  167:22  warning  'comments' is not defined                            no-undef
+  178:3   warning  'commentsQueue' is not defined                       no-undef
+  178:22  warning  'comments' is not defined                            no-undef
+  183:3   warning  'commentsQueue' is not defined                       no-undef
+  183:22  warning  'comments' is not defined                            no-undef
+  188:3   warning  'commentsQueue' is not defined                       no-undef
+  188:22  warning  'comments' is not defined                            no-undef
+  203:3   warning  'commentsQueue' is not defined                       no-undef
+  203:22  warning  'comments' is not defined                            no-undef
+  208:3   warning  'commentsQueue' is not defined                       no-undef
+  208:22  warning  'comments' is not defined                            no-undef
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/simulation/js/realization.js
+  1:5  warning  'realizationCatalog' is assigned a value but never used  no-unused-vars
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/simulation/static/lib/JSAV/js/JSAV-min.js
+   7:340    warning  'Raphael' is not defined                                                   no-undef
+   7:1045   warning  'jQuery' is not defined                                                    no-undef
+   7:1740   warning  'jQuery' is not defined                                                    no-undef
+   7:2092   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   7:3723   warning  'jQuery' is not defined                                                    no-undef
+   7:3741   warning  '$' is defined but never used                                              no-unused-vars
+   7:3794   warning  'JSAV' is not defined                                                      no-undef
+   7:8438   warning  'JSAV' is not defined                                                      no-undef
+   7:8508   warning  'JSAV' is not defined                                                      no-undef
+   7:8565   warning  'JSAV' is not defined                                                      no-undef
+   7:8591   warning  'JSAV' is not defined                                                      no-undef
+   7:8641   warning  'JSAV' is not defined                                                      no-undef
+   7:8667   warning  'JSAV' is not defined                                                      no-undef
+   7:8697   warning  'jQuery' is not defined                                                    no-undef
+   7:10670  warning  'JSAV' is not defined                                                      no-undef
+   7:13650  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   7:14529  warning  'JSAV' is not defined                                                      no-undef
+   7:14725  warning  'JSAV' is not defined                                                      no-undef
+   7:14749  warning  'JSAV' is not defined                                                      no-undef
+   7:14778  warning  'JSAV' is not defined                                                      no-undef
+   7:14799  warning  'JSAV' is not defined                                                      no-undef
+   7:14816  warning  'JSAV' is not defined                                                      no-undef
+   7:14896  warning  'JSAV' is not defined                                                      no-undef
+   7:14978  warning  'JSAV' is not defined                                                      no-undef
+   7:15036  warning  'JSAV' is not defined                                                      no-undef
+   7:15111  warning  'JSAV' is not defined                                                      no-undef
+   7:15363  warning  'JSAV' is not defined                                                      no-undef
+   7:15696  warning  'JSAV' is not defined                                                      no-undef
+   7:15845  warning  'JSAV' is not defined                                                      no-undef
+   7:15970  warning  'JSAV' is not defined                                                      no-undef
+   7:16069  warning  'stp' is defined but never used                                            no-unused-vars
+   7:16329  warning  'JSAV' is not defined                                                      no-undef
+   7:16593  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   7:16652  warning  'JSAV' is not defined                                                      no-undef
+   7:16913  warning  'JSAV' is not defined                                                      no-undef
+   7:17014  warning  'JSAV' is not defined                                                      no-undef
+   7:17095  warning  'JSAV' is not defined                                                      no-undef
+   7:17210  warning  'JSAV' is not defined                                                      no-undef
+   7:17329  warning  'jQuery' is not defined                                                    no-undef
+   7:17337  warning  'jQuery' is not defined                                                    no-undef
+   7:17392  warning  'jQuery' is not defined                                                    no-undef
+   7:17431  warning  'jQuery' is not defined                                                    no-undef
+   7:17486  warning  'jQuery' is not defined                                                    no-undef
+   7:17851  warning  'JSAV' is not defined                                                      no-undef
+   7:18200  warning  'JSAV' is not defined                                                      no-undef
+   7:18402  warning  'JSAV' is not defined                                                      no-undef
+   7:19216  warning  'val' is assigned a value but never used                                   no-unused-vars
+   7:19768  warning  'JSAV' is not defined                                                      no-undef
+   7:19802  warning  'JSAV' is not defined                                                      no-undef
+   7:19822  warning  'JSAV' is not defined                                                      no-undef
+   7:20589  warning  'JSAV' is not defined                                                      no-undef
+   7:20673  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   7:20755  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   7:23114  warning  'dataArr' is defined but never used                                        no-unused-vars
+   7:23678  warning  'min' is assigned a value but never used                                   no-unused-vars
+   7:23706  warning  'result' is assigned a value but never used                                no-unused-vars
+   7:25162  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   7:25348  warning  'JSAV' is not defined                                                      no-undef
+  46:1191   warning  Empty block statement                                                      no-empty
+  49:1996   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  49:2430   warning  'item' is defined but never used                                           no-unused-vars
+  49:5832   warning  'jQuery' is not defined                                                    no-undef
+  49:5931   warning  'JSAV' is not defined                                                      no-undef
+  49:6043   warning  'JSAV' is not defined                                                      no-undef
+  49:7135   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  49:8053   warning  'jQuery' is not defined                                                    no-undef
+  49:8343   warning  'JSAV' is not defined                                                      no-undef
+  49:8437   warning  'JSAV' is not defined                                                      no-undef
+  49:9303   warning  'JSAV' is not defined                                                      no-undef
+  49:9678   warning  'JSAV' is not defined                                                      no-undef
+  49:9743   warning  'JSAV' is not defined                                                      no-undef
+  49:9771   warning  'msg' is defined but never used                                            no-unused-vars
+  49:9775   warning  'options' is defined but never used                                        no-unused-vars
+  49:9803   warning  'JSAV' is not defined                                                      no-undef
+  49:12035  warning  'JSAV' is not defined                                                      no-undef
+  49:12880  warning  'jQuery' is not defined                                                    no-undef
+  49:13171  warning  'jQuery' is not defined                                                    no-undef
+  49:13247  warning  'jQuery' is not defined                                                    no-undef
+  49:13264  warning  'jQuery' is not defined                                                    no-undef
+  49:13295  warning  'jQuery' is not defined                                                    no-undef
+  49:15144  warning  'JSAV' is not defined                                                      no-undef
+  49:15388  warning  'JSAV' is not defined                                                      no-undef
+  49:16366  warning  'bottom' is already defined                                                no-redeclare
+  49:16634  warning  'JSAV' is not defined                                                      no-undef
+  49:17573  warning  'JSAV' is not defined                                                      no-undef
+  49:17717  warning  'JSAV' is not defined                                                      no-undef
+  49:17862  warning  'JSAV' is not defined                                                      no-undef
+  49:18167  warning  'JSAV' is not defined                                                      no-undef
+  49:18193  warning  'JSAV' is not defined                                                      no-undef
+  49:18244  warning  'JSAV' is not defined                                                      no-undef
+  49:18269  warning  'JSAV' is not defined                                                      no-undef
+  49:19824  warning  'jQuery' is not defined                                                    no-undef
+  49:21317  warning  'JSAV' is not defined                                                      no-undef
+  49:21571  warning  'jQuery' is not defined                                                    no-undef
+  49:21624  warning  'R' is defined but never used                                              no-unused-vars
+  49:21918  warning  'options' is defined but never used                                        no-unused-vars
+  49:22188  warning  'JSAV' is not defined                                                      no-undef
+  49:22261  warning  'JSAV' is not defined                                                      no-undef
+  49:22472  warning  'JSAV' is not defined                                                      no-undef
+  49:22497  warning  'options' is defined but never used                                        no-unused-vars
+  49:22707  warning  'JSAV' is not defined                                                      no-undef
+  49:22807  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  49:22993  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  49:23283  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  49:23527  warning  'JSAV' is not defined                                                      no-undef
+  49:23746  warning  'JSAV' is not defined                                                      no-undef
+  49:23922  warning  'JSAV' is not defined                                                      no-undef
+  49:23978  warning  'JSAV' is not defined                                                      no-undef
+  49:24034  warning  'JSAV' is not defined                                                      no-undef
+  49:24090  warning  'JSAV' is not defined                                                      no-undef
+  49:24100  warning  'JSAV' is not defined                                                      no-undef
+  49:24956  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  49:26016  warning  'JSAV' is not defined                                                      no-undef
+  49:26308  warning  'JSAV' is not defined                                                      no-undef
+  49:26941  warning  'JSAV' is not defined                                                      no-undef
+  49:27473  warning  'JSAV' is not defined                                                      no-undef
+  49:27985  warning  'JSAV' is not defined                                                      no-undef
+  49:28662  warning  'JSAV' is not defined                                                      no-undef
+  49:28975  warning  'JSAV' is not defined                                                      no-undef
+  49:29271  warning  'JSAV' is not defined                                                      no-undef
+  49:29544  warning  'JSAV' is not defined                                                      no-undef
+  49:30654  warning  'JSAV' is not defined                                                      no-undef
+  58:1023   warning  'i' is defined but never used                                              no-unused-vars
+  59:37     warning  'jQuery' is not defined                                                    no-undef
+  59:44     warning  'Raphael' is not defined                                                   no-undef
+  59:306    warning  'JSAV' is not defined                                                      no-undef
+  59:819    warning  'JSAV' is not defined                                                      no-undef
+  59:860    warning  'JSAV' is not defined                                                      no-undef
+  59:917    warning  'JSAV' is not defined                                                      no-undef
+  59:941    warning  'JSAV' is not defined                                                      no-undef
+  59:1022   warning  'JSAV' is not defined                                                      no-undef
+  59:1032   warning  'JSAV' is not defined                                                      no-undef
+  59:1081   warning  'JSAV' is not defined                                                      no-undef
+  59:1119   warning  'JSAV' is not defined                                                      no-undef
+  59:1161   warning  'JSAV' is not defined                                                      no-undef
+  59:1513   warning  'JSAV' is not defined                                                      no-undef
+  59:1698   warning  'JSAV' is not defined                                                      no-undef
+  59:2003   warning  'JSAV' is not defined                                                      no-undef
+  59:2138   warning  'JSAV' is not defined                                                      no-undef
+  59:2263   warning  'JSAV' is not defined                                                      no-undef
+  59:2306   warning  'JSAV' is not defined                                                      no-undef
+  59:2316   warning  'JSAV' is not defined                                                      no-undef
+  59:2365   warning  'JSAV' is not defined                                                      no-undef
+  59:2417   warning  'JSAV' is not defined                                                      no-undef
+  59:2469   warning  'JSAV' is not defined                                                      no-undef
+  59:2521   warning  'JSAV' is not defined                                                      no-undef
+  59:2531   warning  'JSAV' is not defined                                                      no-undef
+  59:2565   warning  'JSAV' is not defined                                                      no-undef
+  59:2589   warning  'JSAV' is not defined                                                      no-undef
+  59:2666   warning  'jQuery' is not defined                                                    no-undef
+  59:2986   warning  'JSAV' is not defined                                                      no-undef
+  59:3022   warning  'JSAV' is not defined                                                      no-undef
+  59:3139   warning  'Raphael' is not defined                                                   no-undef
+  59:3283   warning  'JSAV' is not defined                                                      no-undef
+  59:3293   warning  'JSAV' is not defined                                                      no-undef
+  59:3339   warning  'JSAV' is not defined                                                      no-undef
+  59:3374   warning  'JSAV' is not defined                                                      no-undef
+  59:3413   warning  'JSAV' is not defined                                                      no-undef
+  59:3462   warning  'JSAV' is not defined                                                      no-undef
+  59:3511   warning  'JSAV' is not defined                                                      no-undef
+  59:3560   warning  'JSAV' is not defined                                                      no-undef
+  59:3570   warning  'JSAV' is not defined                                                      no-undef
+  59:4958   warning  'JSAV' is not defined                                                      no-undef
+  59:5059   warning  'options' is defined but never used                                        no-unused-vars
+  59:5273   warning  'options' is defined but never used                                        no-unused-vars
+  59:5470   warning  'JSAV' is not defined                                                      no-undef
+  59:6907   warning  Unexpected negating the left operand of 'instanceof' operator              no-unsafe-negation
+  59:7181   warning  'JSAV' is not defined                                                      no-undef
+  59:7315   warning  'JSAV' is not defined                                                      no-undef
+  59:7442   warning  'JSAV' is not defined                                                      no-undef
+  59:7706   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  59:8155   warning  'JSAV' is not defined                                                      no-undef
+  59:8434   warning  'JSAV' is not defined                                                      no-undef
+  59:9096   warning  'JSAV' is not defined                                                      no-undef
+  59:14801  warning  'JSAV' is not defined                                                      no-undef
+  59:14952  warning  'JSAV' is not defined                                                      no-undef
+  59:15113  warning  'JSAV' is not defined                                                      no-undef
+  59:15536  warning  'options' is defined but never used                                        no-unused-vars
+  59:15615  warning  'options' is defined but never used                                        no-unused-vars
+  59:15845  warning  'JSAV' is not defined                                                      no-undef
+  59:16031  warning  'JSAV' is not defined                                                      no-undef
+  59:16166  warning  'JSAV' is not defined                                                      no-undef
+  59:16208  warning  'JSAV' is not defined                                                      no-undef
+  59:16218  warning  'JSAV' is not defined                                                      no-undef
+  59:16247  warning  'JSAV' is not defined                                                      no-undef
+  59:16320  warning  'JSAV' is not defined                                                      no-undef
+  59:16346  warning  'jQuery' is not defined                                                    no-undef
+  59:16432  warning  'JSAV' is not defined                                                      no-undef
+  59:17360  warning  'JSAV' is not defined                                                      no-undef
+  59:17389  warning  'JSAV' is not defined                                                      no-undef
+  59:17742  warning  Unexpected negating the left operand of 'instanceof' operator              no-unsafe-negation
+  59:17833  warning  'JSAV' is not defined                                                      no-undef
+  59:17968  warning  'JSAV' is not defined                                                      no-undef
+  59:18471  warning  'JSAV' is not defined                                                      no-undef
+  59:18497  warning  'JSAV' is not defined                                                      no-undef
+  59:18627  warning  'options' is defined but never used                                        no-unused-vars
+  59:18918  warning  'JSAV' is not defined                                                      no-undef
+  59:19099  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  59:19637  warning  'JSAV' is not defined                                                      no-undef
+  59:19895  warning  'JSAV' is not defined                                                      no-undef
+  59:20840  warning  'JSAV' is not defined                                                      no-undef
+  59:20945  warning  'newli' is assigned a value but never used                                 no-unused-vars
+  59:21731  warning  'jQuery' is not defined                                                    no-undef
+  59:21815  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  59:22011  warning  'JSAV' is not defined                                                      no-undef
+  59:22091  warning  'JSAV' is not defined                                                      no-undef
+  59:22319  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  59:22491  warning  'JSAV' is not defined                                                      no-undef
+  59:22593  warning  '$newElem' is assigned a value but never used                              no-unused-vars
+  59:22961  warning  'JSAV' is not defined                                                      no-undef
+  59:23479  warning  'i' is already defined                                                     no-redeclare
+  59:23627  warning  'JSAV' is not defined                                                      no-undef
+  59:25061  warning  'JSAV' is not defined                                                      no-undef
+  59:25392  warning  'JSAV' is not defined                                                      no-undef
+  59:25654  warning  'JSAV' is not defined                                                      no-undef
+  59:26954  warning  'JSAV' is not defined                                                      no-undef
+  59:28123  warning  'JSAV' is not defined                                                      no-undef
+  59:28154  warning  'JSAV' is not defined                                                      no-undef
+  59:28191  warning  'JSAV' is not defined                                                      no-undef
+  59:28279  warning  'jQuery' is not defined                                                    no-undef
+  59:28342  warning  '$lastItem' is defined but never used                                      no-unused-vars
+  59:28352  warning  'options' is defined but never used                                        no-unused-vars
+  59:28412  warning  'index' is defined but never used                                          no-unused-vars
+  59:28418  warning  'item' is defined but never used                                           no-unused-vars
+  59:28680  warning  'index' is defined but never used                                          no-unused-vars
+  59:28686  warning  'item' is defined but never used                                           no-unused-vars
+  59:28997  warning  'options' is defined but never used                                        no-unused-vars
+  59:29183  warning  'index' is defined but never used                                          no-unused-vars
+  59:29189  warning  'item' is defined but never used                                           no-unused-vars
+  59:29844  warning  'width' is assigned a value but never used                                 no-unused-vars
+  59:29995  warning  'JSAV' is not defined                                                      no-undef
+  59:30245  warning  'item' is defined but never used                                           no-unused-vars
+  59:30692  warning  'JSAV' is not defined                                                      no-undef
+  59:30804  warning  'jQuery' is not defined                                                    no-undef
+  59:30884  warning  'JSAV' is not defined                                                      no-undef
+  59:30961  warning  'JSAV' is not defined                                                      no-undef
+  59:30984  warning  'JSAV' is not defined                                                      no-undef
+  59:31295  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  59:31553  warning  'JSAV' is not defined                                                      no-undef
+  59:31838  warning  'JSAV' is not defined                                                      no-undef
+  59:31918  warning  'JSAV' is not defined                                                      no-undef
+  59:33116  warning  Unexpected negating the left operand of 'instanceof' operator              no-unsafe-negation
+  59:33242  warning  'JSAV' is not defined                                                      no-undef
+  59:33284  warning  'JSAV' is not defined                                                      no-undef
+  59:33294  warning  'JSAV' is not defined                                                      no-undef
+  59:34739  warning  'JSAV' is not defined                                                      no-undef
+  59:34883  warning  'JSAV' is not defined                                                      no-undef
+  59:34910  warning  'JSAV' is not defined                                                      no-undef
+  59:35692  warning  'JSAV' is not defined                                                      no-undef
+  59:36104  warning  'JSAV' is not defined                                                      no-undef
+  59:37004  warning  'JSAV' is not defined                                                      no-undef
+  59:37780  warning  'JSAV' is not defined                                                      no-undef
+  59:39405  warning  'JSAV' is not defined                                                      no-undef
+  59:39539  warning  'JSAV' is not defined                                                      no-undef
+  59:40980  warning  'JSAV' is not defined                                                      no-undef
+  59:41992  warning  'JSAV' is not defined                                                      no-undef
+  59:44671  warning  'JSAV' is not defined                                                      no-undef
+  59:45077  warning  'JSAV' is not defined                                                      no-undef
+  59:45204  warning  'JSAV' is not defined                                                      no-undef
+  59:45316  warning  'JSAV' is not defined                                                      no-undef
+  59:45440  warning  'JSAV' is not defined                                                      no-undef
+  59:45526  warning  'jQuery' is not defined                                                    no-undef
+  59:48996  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  59:49860  warning  'JSAV' is not defined                                                      no-undef
+  59:49958  warning  'data' is defined but never used                                           no-unused-vars
+  59:52627  warning  Unexpected constant condition                                              no-constant-condition
+  59:53238  warning  'jQuery' is not defined                                                    no-undef
+  59:53318  warning  'JSAV' is not defined                                                      no-undef
+  59:53594  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  59:53871  warning  'JSAV' is not defined                                                      no-undef
+  59:53912  warning  'JSAV' is not defined                                                      no-undef
+  59:53969  warning  'JSAV' is not defined                                                      no-undef
+  59:53992  warning  'JSAV' is not defined                                                      no-undef
+  59:54217  warning  'JSAV' is not defined                                                      no-undef
+  59:57637  warning  'edge' is already defined                                                  no-redeclare
+  59:57651  warning  'edges' is already defined                                                 no-redeclare
+  59:58186  warning  'JSAV' is not defined                                                      no-undef
+  59:58228  warning  'JSAV' is not defined                                                      no-undef
+  59:58238  warning  'JSAV' is not defined                                                      no-undef
+  59:58267  warning  'JSAV' is not defined                                                      no-undef
+  59:59138  warning  'JSAV' is not defined                                                      no-undef
+  59:59195  warning  'JSAV' is not defined                                                      no-undef
+  59:59222  warning  'JSAV' is not defined                                                      no-undef
+  59:59489  warning  'JSAV' is not defined                                                      no-undef
+  59:60161  warning  'JSAV' is not defined                                                      no-undef
+  59:60295  warning  'JSAV' is not defined                                                      no-undef
+  59:60701  warning  'JSAV' is not defined                                                      no-undef
+  59:60791  warning  'options' is defined but never used                                        no-unused-vars
+  59:60816  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  59:63798  warning  'JSAV' is not defined                                                      no-undef
+  59:63896  warning  'JSAV' is not defined                                                      no-undef
+  59:63964  warning  'jQuery' is not defined                                                    no-undef
+  59:64044  warning  'JSAV' is not defined                                                      no-undef
+  59:64420  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  59:64791  warning  'JSAV' is not defined                                                      no-undef
+  59:64832  warning  'JSAV' is not defined                                                      no-undef
+  59:64955  warning  'JSAV' is not defined                                                      no-undef
+  59:64979  warning  'JSAV' is not defined                                                      no-undef
+  59:65059  warning  'JSAV' is not defined                                                      no-undef
+  59:65102  warning  'JSAV' is not defined                                                      no-undef
+  59:65112  warning  'JSAV' is not defined                                                      no-undef
+  59:65162  warning  'JSAV' is not defined                                                      no-undef
+  59:65292  warning  'JSAV' is not defined                                                      no-undef
+  59:65441  warning  'JSAV' is not defined                                                      no-undef
+  59:67128  warning  'JSAV' is not defined                                                      no-undef
+  59:67279  warning  'opts' is assigned a value but never used                                  no-unused-vars
+  59:67353  warning  'toIndex' is assigned a value but never used                               no-unused-vars
+  59:67995  warning  'JSAV' is not defined                                                      no-undef
+  59:68422  warning  'JSAV' is not defined                                                      no-undef
+  59:68623  warning  Unexpected negating the left operand of 'instanceof' operator              no-unsafe-negation
+  59:70503  warning  'nodes' is already defined                                                 no-redeclare
+  59:70512  warning  'edges' is already defined                                                 no-redeclare
+  59:70588  warning  'i' is already defined                                                     no-redeclare
+  59:70590  warning  'e' is already defined                                                     no-redeclare
+  59:70821  warning  'JSAV' is not defined                                                      no-undef
+  66:50     warning  'options' is defined but never used                                        no-unused-vars
+  66:63     warning  'layout' is assigned a value but never used                                no-unused-vars
+  66:140    warning  'options' is defined but never used                                        no-unused-vars
+  66:244    warning  'JSAV' is not defined                                                      no-undef
+  66:581    warning  'dagre' is not defined                                                     no-undef
+  66:904    warning  'dagre' is not defined                                                     no-undef
+  66:1361   warning  'JSAV' is not defined                                                      no-undef
+  66:1966   warning  'JSAV' is not defined                                                      no-undef
+  66:2007   warning  'JSAV' is not defined                                                      no-undef
+  66:2064   warning  'JSAV' is not defined                                                      no-undef
+  66:2092   warning  'JSAV' is not defined                                                      no-undef
+  66:2161   warning  'JSAV' is not defined                                                      no-undef
+  66:2203   warning  'JSAV' is not defined                                                      no-undef
+  66:2213   warning  'JSAV' is not defined                                                      no-undef
+  66:2666   warning  'JSAV' is not defined                                                      no-undef
+  66:2982   warning  'JSAV' is not defined                                                      no-undef
+  66:3116   warning  'JSAV' is not defined                                                      no-undef
+  66:3770   warning  'JSAV' is not defined                                                      no-undef
+  66:3833   warning  'JSAV' is not defined                                                      no-undef
+  66:3949   warning  'jQuery' is not defined                                                    no-undef
+  66:4024   warning  'getIndices' is assigned a value but never used                            no-unused-vars
+  66:4035   warning  'JSAV' is not defined                                                      no-undef
+  66:5229   warning  'JSAV' is not defined                                                      no-undef
+  66:5284   warning  'JSAV' is not defined                                                      no-undef
+  66:5341   warning  'JSAV' is not defined                                                      no-undef
+  66:5366   warning  'JSAV' is not defined                                                      no-undef
+  66:6177   warning  'l' is defined but never used                                              no-unused-vars
+  66:7938   warning  'JSAV' is not defined                                                      no-undef
+  66:7967   warning  'JSAV' is not defined                                                      no-undef
+  66:8063   warning  'jQuery' is not defined                                                    no-undef
+  66:8149   warning  'JSAV' is not defined                                                      no-undef
+  66:8936   warning  'JSAV' is not defined                                                      no-undef
+  66:8977   warning  'JSAV' is not defined                                                      no-undef
+  66:9034   warning  'JSAV' is not defined                                                      no-undef
+  66:9061   warning  'JSAV' is not defined                                                      no-undef
+  66:9141   warning  'JSAV' is not defined                                                      no-undef
+  66:9151   warning  'JSAV' is not defined                                                      no-undef
+  66:9198   warning  'JSAV' is not defined                                                      no-undef
+  66:9234   warning  'JSAV' is not defined                                                      no-undef
+  66:9256   warning  'JSAV' is not defined                                                      no-undef
+  66:9388   warning  'JSAV' is not defined                                                      no-undef
+  66:9736   warning  'JSAV' is not defined                                                      no-undef
+  66:9947   warning  'JSAV' is not defined                                                      no-undef
+  66:10118  warning  'JSAV' is not defined                                                      no-undef
+  66:10468  warning  'JSAV' is not defined                                                      no-undef
+  66:10606  warning  'JSAV' is not defined                                                      no-undef
+  66:10732  warning  'JSAV' is not defined                                                      no-undef
+  66:10773  warning  'JSAV' is not defined                                                      no-undef
+  66:10783  warning  'JSAV' is not defined                                                      no-undef
+  66:10830  warning  'JSAV' is not defined                                                      no-undef
+  66:10880  warning  'JSAV' is not defined                                                      no-undef
+  66:10930  warning  'JSAV' is not defined                                                      no-undef
+  66:10980  warning  'JSAV' is not defined                                                      no-undef
+  66:10990  warning  'JSAV' is not defined                                                      no-undef
+  66:11254  warning  'JSAV' is not defined                                                      no-undef
+  66:11284  warning  'JSAV' is not defined                                                      no-undef
+  66:12571  warning  'JSAV' is not defined                                                      no-undef
+  66:12684  warning  'JSAV' is not defined                                                      no-undef
+  66:12816  warning  'JSAV' is not defined                                                      no-undef
+  66:12842  warning  'JSAV' is not defined                                                      no-undef
+  66:13585  warning  'JSAV' is not defined                                                      no-undef
+  66:14068  warning  'options' is defined but never used                                        no-unused-vars
+  66:14456  warning  'JSAV' is not defined                                                      no-undef
+  66:14485  warning  'options' is defined but never used                                        no-unused-vars
+  66:16860  warning  'newPos' is assigned a value but never used                                no-unused-vars
+  66:16867  warning  'JSAV' is not defined                                                      no-undef
+  66:17635  warning  Unexpected negating the left operand of 'instanceof' operator              no-unsafe-negation
+  66:17725  warning  'JSAV' is not defined                                                      no-undef
+  66:17862  warning  'JSAV' is not defined                                                      no-undef
+  66:18021  warning  'JSAV' is not defined                                                      no-undef
+  66:18140  warning  'JSAV' is not defined                                                      no-undef
+  66:19366  warning  'JSAV' is not defined                                                      no-undef
+  66:19407  warning  'JSAV' is not defined                                                      no-undef
+  66:19961  warning  'JSAV' is not defined                                                      no-undef
+  66:19984  warning  'JSAV' is not defined                                                      no-undef
+  66:20062  warning  'JSAV' is not defined                                                      no-undef
+  66:20072  warning  'JSAV' is not defined                                                      no-undef
+  66:20127  warning  'JSAV' is not defined                                                      no-undef
+  66:20761  warning  'options' is defined but never used                                        no-unused-vars
+  66:20856  warning  'options' is defined but never used                                        no-unused-vars
+  66:21024  warning  'JSAV' is not defined                                                      no-undef
+  66:21817  warning  'JSAV' is not defined                                                      no-undef
+  66:23232  warning  Empty block statement                                                      no-empty
+  66:24986  warning  'JSAV' is not defined                                                      no-undef
+  66:25008  warning  'JSAV' is not defined                                                      no-undef
+  66:25093  warning  'jQuery' is not defined                                                    no-undef
+  66:25562  warning  'JSAV' is not defined                                                      no-undef
+  66:25659  warning  'JSAV' is not defined                                                      no-undef
+  66:25685  warning  'JSAV' is not defined                                                      no-undef
+  66:25723  warning  'JSAV' is not defined                                                      no-undef
+  66:26296  warning  'JSAV' is not defined                                                      no-undef
+  66:27517  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  66:28232  warning  'JSAV' is not defined                                                      no-undef
+  66:28393  warning  'JSAV' is not defined                                                      no-undef
+  66:28490  warning  'JSAV' is not defined                                                      no-undef
+  66:28516  warning  'JSAV' is not defined                                                      no-undef
+  66:29201  warning  'JSAV' is not defined                                                      no-undef
+  66:29698  warning  'JSAV' is not defined                                                      no-undef
+  66:29727  warning  'JSAV' is not defined                                                      no-undef
+  66:29918  warning  'jQuery' is not defined                                                    no-undef
+  66:30021  warning  'JSAV' is not defined                                                      no-undef
+  66:33430  warning  'JSAV' is not defined                                                      no-undef
+  66:33762  warning  'JSAV' is not defined                                                      no-undef
+  66:33809  warning  'JSAV' is not defined                                                      no-undef
+  66:34857  warning  'JSAV' is not defined                                                      no-undef
+  66:36094  warning  'JSAV' is not defined                                                      no-undef
+  66:36548  warning  'JSAV' is not defined                                                      no-undef
+  66:36735  warning  'JSAV' is not defined                                                      no-undef
+  66:37134  warning  'JSAV' is not defined                                                      no-undef
+  66:37393  warning  'JSAV' is not defined                                                      no-undef
+  66:37598  warning  'jQuery' is not defined                                                    no-undef
+  66:37803  warning  'jQuery' is not defined                                                    no-undef
+  66:42613  warning  'studentSteps' is assigned a value but never used                          no-unused-vars
+  66:45716  warning  'JSAV' is not defined                                                      no-undef
+  66:45976  warning  'JSAV' is not defined                                                      no-undef
+  66:48405  warning  'modelAv' is assigned a value but never used                               no-unused-vars
+  66:48426  warning  'studentAv' is assigned a value but never used                             no-unused-vars
+  66:49203  warning  Empty block statement                                                      no-empty
+  66:50390  warning  'JSAV' is not defined                                                      no-undef
+  66:50420  warning  'JSAV' is not defined                                                      no-undef
+  66:50555  warning  'jQuery' is not defined                                                    no-undef
+  66:50648  warning  'JSAV' is not defined                                                      no-undef
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/simulation/static/lib/JSAV/lib/jquery.transit.js
+   87:17  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  443:18  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  558:27  warning  'jQuery' is not defined                                                    no-undef
+  726:49  warning  Unnecessary escape character: \-                                           no-useless-escape
+  726:54  warning  Unnecessary escape character: \.                                           no-useless-escape
+  745:47  warning  Unnecessary escape character: \-                                           no-useless-escape
+  745:52  warning  Unnecessary escape character: \.                                           no-useless-escape
+  752:4   warning  'jQuery' is not defined                                                    no-undef
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/simulation/static/lib/JSAV/lib/raphael.js
+  10:22811  error  Parsing error: Deleting local variable in strict mode
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/simulation/static/lib/ODSA/js/odsaAV.js
+    2:10   warning  'alert' is already defined as a built-in global variable                   no-redeclare
+    2:23   warning  'console' is already defined as a built-in global variable                 no-redeclare
+    2:52   warning  'JSAV_OPTIONS' is defined but never used                                   no-unused-vars
+    2:66   warning  'JSAV_EXERCISE_OPTIONS' is defined but never used                          no-unused-vars
+  289:279  warning  'JSAV' is not defined                                                      no-undef
+  408:9    warning  'score' is already defined                                                 no-redeclare
+  489:14   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  498:14   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  502:11   warning  Redundant double negation                                                  no-extra-boolean-cast
+  559:9    warning  Redundant double negation                                                  no-extra-boolean-cast
+  560:32   warning  'e' is defined but never used                                              no-unused-vars
+  565:31   warning  'e' is defined but never used                                              no-unused-vars
+  577:3    warning  'jQuery' is not defined                                                    no-undef
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/simulation/static/lib/ODSA/js/odsaUtils.js
+     2:10  warning  'alert' is already defined as a built-in global variable                   no-redeclare
+     2:10  warning  'alert' is defined but never used                                          no-unused-vars
+     2:23  warning  'console' is already defined as a built-in global variable                 no-redeclare
+    68:3   warning  'JSAV' is not defined                                                      no-undef
+    81:3   warning  'JSAV' is not defined                                                      no-undef
+    85:3   warning  'JSAV' is not defined                                                      no-undef
+    92:3   warning  'JSAV' is not defined                                                      no-undef
+   100:3   warning  'JSAV' is not defined                                                      no-undef
+   143:24  warning  'JSAV' is not defined                                                      no-undef
+   147:24  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   186:18  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   308:16  warning  'jQuery' is not defined                                                    no-undef
+   334:11  warning  're' is already defined                                                    no-redeclare
+   352:14  warning  'i' is already defined                                                     no-redeclare
+   396:25  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   402:14  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   422:20  warning  'JSAV' is not defined                                                      no-undef
+   428:14  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   438:17  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   475:75  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   488:49  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   527:32  warning  'JSAV' is not defined                                                      no-undef
+   535:31  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   558:99  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   561:39  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   592:28  warning  'JSAV' is not defined                                                      no-undef
+   594:31  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   597:42  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   597:79  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   609:18  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   707:26  warning  'JSAV' is not defined                                                      no-undef
+   790:18  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   903:7   warning  'jQuery' is not defined                                                    no-undef
+   913:11  warning  'data' is assigned a value but never used                                  no-unused-vars
+   917:29  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   929:42  warning  'eventList' is not defined                                                 no-undef
+   933:31  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   939:56  warning  'sessionKey' is not defined                                                no-undef
+  1098:36  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  1148:11  warning  'jQuery' is not defined                                                    no-undef
+  1205:3   warning  'jQuery' is not defined                                                    no-undef
+
+/home/runner/work/exp-quick-sort-iiith/exp-quick-sort-iiith/experiment/quick-sort/simulation/static/lib/quicksortCODE.js
+   17:3   warning  'JSAV' is not defined              no-undef
+   17:51  warning  'JSAV' is not defined              no-undef
+   18:18  warning  'JSAV' is not defined              no-undef
+   21:27  warning  'index' is defined but never used  no-unused-vars
+   21:34  warning  'item' is defined but never used   no-unused-vars
+   42:3   warning  'JSAV' is not defined              no-undef
+   42:52  warning  'JSAV' is not defined              no-undef
+   43:18  warning  'JSAV' is not defined              no-undef
+   46:27  warning  'index' is defined but never used  no-unused-vars
+   46:34  warning  'item' is defined but never used   no-unused-vars
+   66:3   warning  'JSAV' is not defined              no-undef
+   66:53  warning  'JSAV' is not defined              no-undef
+   67:18  warning  'JSAV' is not defined              no-undef
+   70:27  warning  'index' is defined but never used  no-unused-vars
+   70:34  warning  'item' is defined but never used   no-unused-vars
+   86:3   warning  'JSAV' is not defined              no-undef
+   86:54  warning  'JSAV' is not defined              no-undef
+   87:18  warning  'JSAV' is not defined              no-undef
+  106:3   warning  'JSAV' is not defined              no-undef
+  111:3   warning  'jQuery' is not defined            no-undef
+
+✖ 650 problems (1 error, 649 warnings)
+  0 errors and 2 warnings potentially fixable with the `--fix` option.
+
