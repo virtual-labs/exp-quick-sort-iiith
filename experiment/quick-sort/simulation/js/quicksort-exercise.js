@@ -1,45 +1,50 @@
 //Comments Dictionary
 comments = {
-  "av_c1": "Select the pivot and then click on where it should be moved to.",
-  "av_c2": "Select the pivot.",
-  "av_c3": "Move the pivot to the end.",
-  "av_c4": "Partition the subarray.",
-  "av_c5": "Put the pivot value into its correct location.",
-  "av_c6": "Mark the pivot location as sorted.",
-  "av_c7": "Mark the single value on the left side as sorted.",
-  "av_c8": "Mark the single value on the right side as sorted.",
-  "av_c9": "Select the partition's left endpoint.",
-  "av_c10": "Select the partition's right endpoint, then click on 'Partition'.",
-  "av_c11": "Click 'Partition'.",
-  "av_c12": "",
-  "av_c13": "Select the right endpoint, then click on 'Partition'.",
-  "av_c14": "Select the left endpoint.",
-  "av_c15": "Done partitioning. Now click on the position where the pivot should be moved to, and click 'Mark Selected as Sorted'."
+  av_c1: "Select the pivot and then click on where it should be moved to.",
+  av_c2: "Select the pivot.",
+  av_c3: "Move the pivot to the end.",
+  av_c4: "Partition the subarray.",
+  av_c5: "Put the pivot value into its correct location.",
+  av_c6: "Mark the pivot location as sorted.",
+  av_c7: "Mark the single value on the left side as sorted.",
+  av_c8: "Mark the single value on the right side as sorted.",
+  av_c9: "Select the partition's left endpoint.",
+  av_c10: "Select the partition's right endpoint, then click on 'Partition'.",
+  av_c11: "Click 'Partition'.",
+  av_c12: "",
+  av_c13: "Select the right endpoint, then click on 'Partition'.",
+  av_c14: "Select the left endpoint.",
+  av_c15:
+    "Done partitioning. Now click on the position where the pivot should be moved to, and click 'Mark Selected as Sorted'.",
 };
 
 commentsQueue = [];
 
-const displayComment = function(str){
-  $('#ins').html(str);
+const displayComment = function (str) {
+  $("#ins").html(str);
 };
 
-"use strict";
+("use strict");
 // /*jslint noempty: false */
 /*global alert: true, ODSA */
-$(document).ready(function() {
+$(document).ready(function () {
   // Process help button: Give a full help page for this activity
   function help() {
-    window.open("quicksortHelpPRO.html", 'helpwindow');
+    window.open("quicksortHelpPRO.html", "helpwindow");
   }
+
+  // For final success message
+  var exerciseCompleted = false;
+
+  var isModelAnswerVisible = false;
 
   // Process about button: Pop up a message with an Alert
   function about() {
     alert(ODSA.AV.aboutstring(interpret(".avTitle"), interpret("av_Authors")));
   }
 
-  $('#help').click(help);
-  $('#about').click(about);
-
+  $("#help").click(help);
+  $("#about").click(about);
 
   // Processes the reset button
   function initialize() {
@@ -62,11 +67,11 @@ $(document).ready(function() {
     // Create the array the user will intereact with
     userArr = av.ds.array(initialArray, {
       indexed: true,
-      layout: arrayLayout.val()
+      layout: arrayLayout.val(),
     });
 
     // Assign a click handler function to the user array
-    userArr.click(function(index) {
+    userArr.click(function (index) {
       clickHandler(this, index);
     });
 
@@ -86,7 +91,7 @@ $(document).ready(function() {
   function modelSolution(av) {
     var modelArr = av.ds.array(initialArray, {
       indexed: true,
-      layout: arrayLayout.val()
+      layout: arrayLayout.val(),
     });
 
     // ModelSolution vars used for fixing the state
@@ -100,12 +105,26 @@ $(document).ready(function() {
     // the second step of the slideshow
     av.displayInit();
 
-    quicksort(av, modelArr, 0, modelArr.size() - 1, msPivotIndex,
-      msPivotMoved, msPartitioned, msLeft, msRight);
+    quicksort(
+      av,
+      modelArr,
+      0,
+      modelArr.size() - 1,
+      msPivotIndex,
+      msPivotMoved,
+      msPartitioned,
+      msLeft,
+      msRight,
+    );
 
     // Return model array and all state variables needed to grade/fix state
-    return [modelArr, msPivotIndex, msPivotMoved, msPartitioned,
-      msLeft, msRight
+    return [
+      modelArr,
+      msPivotIndex,
+      msPivotMoved,
+      msPartitioned,
+      msLeft,
+      msRight,
     ];
   }
 
@@ -114,8 +133,17 @@ $(document).ready(function() {
    * steps where the model answer will be compared against the user's
    * solution for grading purposes
    */
-  function quicksort(av, arr, i, j, msPivotIndex, msPivotMoved,
-    msPartitioned, msLeft, msRight) {
+  function quicksort(
+    av,
+    arr,
+    i,
+    j,
+    msPivotIndex,
+    msPivotMoved,
+    msPartitioned,
+    msLeft,
+    msRight,
+  ) {
     // Select the pivot
     var pIndex = Math.floor((i + j) / 2);
     arr.highlightBlue(pIndex);
@@ -158,32 +186,68 @@ $(document).ready(function() {
 
     av.umsg(interpret("av_c6"));
     arr.markSorted(k);
-    resetMSStateVars(msPivotIndex, msPivotMoved, msPartitioned, msLeft, msRight);
+    resetMSStateVars(
+      msPivotIndex,
+      msPivotMoved,
+      msPartitioned,
+      msLeft,
+      msRight,
+    );
     av.stepOption("grade", true);
     av.step();
 
     // Sort left partition
-    if ((k - i) > 1) {
-      quicksort(av, arr, i, k - 1, msPivotIndex, msPivotMoved,
-        msPartitioned, msLeft, msRight);
-    } else if ((k - i) === 1) {
+    if (k - i > 1) {
+      quicksort(
+        av,
+        arr,
+        i,
+        k - 1,
+        msPivotIndex,
+        msPivotMoved,
+        msPartitioned,
+        msLeft,
+        msRight,
+      );
+    } else if (k - i === 1) {
       // If the sublist is a single element, mark it as sorted
       av.umsg(interpret("av_c7"));
       arr.markSorted(i);
-      resetMSStateVars(msPivotIndex, msPivotMoved, msPartitioned, msLeft, msRight);
+      resetMSStateVars(
+        msPivotIndex,
+        msPivotMoved,
+        msPartitioned,
+        msLeft,
+        msRight,
+      );
       av.stepOption("grade", true);
       av.step();
     }
 
     // Sort right partition
-    if ((j - k) > 1) {
-      quicksort(av, arr, k + 1, j, msPivotIndex, msPivotMoved,
-        msPartitioned, msLeft, msRight);
-    } else if ((j - k) === 1) {
+    if (j - k > 1) {
+      quicksort(
+        av,
+        arr,
+        k + 1,
+        j,
+        msPivotIndex,
+        msPivotMoved,
+        msPartitioned,
+        msLeft,
+        msRight,
+      );
+    } else if (j - k === 1) {
       // If the sublist is a single element, mark it as sorted
       av.umsg(interpret("av_c8"));
       arr.markSorted(j);
-      resetMSStateVars(msPivotIndex, msPivotMoved, msPartitioned, msLeft, msRight);
+      resetMSStateVars(
+        msPivotIndex,
+        msPivotMoved,
+        msPartitioned,
+        msLeft,
+        msRight,
+      );
       av.stepOption("grade", true);
       av.step();
     }
@@ -205,7 +269,7 @@ $(document).ready(function() {
       while (arr.value(l) < pivot) {
         l++;
       }
-      while ((r >= l) && (arr.value(r) >= pivot)) {
+      while (r >= l && arr.value(r) >= pivot) {
         r--;
       }
       if (r > l) {
@@ -227,8 +291,12 @@ $(document).ready(function() {
     var r = modelState[5];
 
     // Get the raw array elements so we can access their list of class names
-    var modArrElems = JSAV.utils._helpers.getIndices($(modelArray.element).find("li"));
-    var userArrElems = JSAV.utils._helpers.getIndices($(userArr.element).find("li"));
+    var modArrElems = JSAV.utils._helpers.getIndices(
+      $(modelArray.element).find("li"),
+    );
+    var userArrElems = JSAV.utils._helpers.getIndices(
+      $(userArr.element).find("li"),
+    );
 
     for (var i = 0; i < modelArray.size(); i++) {
       // Fix any incorrect values
@@ -335,7 +403,6 @@ $(document).ready(function() {
     exercise.gradeableStep();
   }
 
-
   // Reset the variables used for each iteration of the algorithm
   function resetStateVars() {
     pivotIndex.value(-1);
@@ -346,8 +413,13 @@ $(document).ready(function() {
   }
 
   // Reset the model solution variables
-  function resetMSStateVars(msPivotIndex, msPivotMoved,
-    msPartitioned, msLeft, msRight) {
+  function resetMSStateVars(
+    msPivotIndex,
+    msPivotMoved,
+    msPartitioned,
+    msLeft,
+    msRight,
+  ) {
     msPivotIndex.value(-1);
     msPivotMoved.value(false);
     msPartitioned.value(false);
@@ -369,7 +441,12 @@ $(document).ready(function() {
       return;
     }
 
-    partition(userArr, left.value(), right.value(), userArr.value(pivotIndex.value()));
+    partition(
+      userArr,
+      left.value(),
+      right.value(),
+      userArr.value(pivotIndex.value()),
+    );
 
     // Update state variables and clear left and right marker arrows
     partitioned.value(true);
@@ -398,13 +475,51 @@ $(document).ready(function() {
     // Mark this as a step to be graded and a step that can be undone (continuous feedback)
     exercise.gradeableStep();
 
-    av.umsg(interpret("av_c1"));
+    // Check if array is sorted and show final feedback in the correct Observations area
+    function checkIfSorted(arr) {
+      for (let i = 1; i < arr.size(); i++) {
+        if (arr.value(i - 1) > arr.value(i)) {
+          return false;
+        }
+      }
+      return true;
+    }
+    if (checkIfSorted(userArr)) {
+      exerciseCompleted = true;
+      console.log("[QS-LOG] Array sorted after mark.");
+      // Place message in the main Observations area with green text
+      var obs = document.getElementById("qs-observations");
+      if (obs) {
+        obs.textContent = "Correct! The array is sorted.";
+        obs.classList.add("qs-success-message");
+        console.log("[QS-LOG] Success message shown in Observations.");
+      } else {
+        displayComment("Correct! The array is sorted.");
+        console.log(
+          "[QS-LOG] Success message shown using displayComment fallback.",
+        );
+      }
+    } else {
+      // Remove green class if not sorted
+      var obs = document.getElementById("qs-observations");
+      if (obs) {
+        obs.classList.remove("qs-success-message");
+      }
+      console.log("[QS-LOG] Array not yet sorted after mark.");
+      av.umsg(interpret("av_c1"));
+    }
+
+    //av.umsg(interpret("av_c1"));
   }
 
   // Attach the button handlers
-  $('#partition').click(partitionButton);
-  $('#markSorted').click(markSortedButton);
-
+  $("#partition").click(partitionButton);
+  $("#markSorted").click(markSortedButton);
+  $("#model-ans-btn")
+    .off("click")
+    .on("click", function () {
+      showTextModelAnswer();
+    });
 
   //////////////////////////////////////////////////////////////////
   // Start processing here
@@ -416,19 +531,19 @@ $(document).ready(function() {
 
   // add the layout setting preference
   var arrayLayout = settings.add("layout", {
-    "type": "select",
-    "options": {
-      "bar": "Bar",
-      "array": "Array"
+    type: "select",
+    options: {
+      bar: "Bar",
+      array: "Array",
     },
-    "label": "Array layout: ",
-    "value": "array"
+    label: "Array layout: ",
+    value: "array",
   });
 
   var arraySize = 10,
     initialArray = [],
-    av = new JSAV($('.avcontainer'), {
-      settings: settings
+    av = new JSAV($(".avcontainer"), {
+      settings: settings,
     });
 
   av.recorded(); // we are not recording an AV with an algorithm
@@ -455,12 +570,61 @@ $(document).ready(function() {
   //   - Each of the state variables will only be compared by value
   // {fix: fixState}: The function to call to fix the state of the exercise
   // if the user makes a mistake in 'fix' mode
-  var exercise = av.exercise(modelSolution, initialize, {
-    compare: [{
-      "class": ["processing", "sorted"]
-    }, {}, {}, {}, {}, {}],
-    controls: $('.jsavexercisecontrols'),
-    fix: fixState
+  window.exercise = av.exercise(modelSolution, initialize, {
+    compare: [
+      {
+        class: ["processing", "sorted"],
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+    ],
+    controls: $(".jsavexercisecontrols"),
+    fix: fixState,
   });
   exercise.reset();
+  // Bind Model Answer button AFTER exercise is ready
+
+  // ================= TEXT-BASED MODEL ANSWER =================
+  function showTextModelAnswer() {
+    var obs = document.getElementById("qs-observations");
+    var commentBox = document.querySelector(".comment-box");
+    var btn = document.getElementById("model-ans-btn");
+
+    if (!obs || !btn || !commentBox) return;
+
+    if (!isModelAnswerVisible) {
+      // SHOW model answer
+      obs.classList.remove("qs-success-message");
+      obs.classList.add("qs-model-answer");
+
+      commentBox.classList.add("qs-model-active");
+
+      obs.innerHTML = `
+      <b>Model Answer – Quick Sort (High-level Steps)</b><br><br>
+
+      <div class="step"><b>Step 1:</b> Choose a pivot element from the array.</div>
+      <div class="step"><b>Step 2:</b> Partition the array using left and right pointers.</div>
+      <div class="step">&nbsp;&nbsp;• Smaller elements move left.</div>
+      <div class="step">&nbsp;&nbsp;• Larger elements move right.</div>
+      <div class="step"><b>Step 3:</b> Place the pivot in its correct sorted position.</div>
+      <div class="step"><b>Step 4:</b> Recursively apply Quick Sort to subarrays.</div>
+      <div class="step"><b>Final:</b> Continue until the array is fully sorted.</div>
+    `;
+
+      btn.value = "Hide Model Answer";
+      isModelAnswerVisible = true;
+    } else {
+      // HIDE model answer
+      obs.innerHTML = "";
+      obs.classList.remove("qs-model-answer");
+
+      commentBox.classList.remove("qs-model-active");
+
+      btn.value = "Model Answer";
+      isModelAnswerVisible = false;
+    }
+  }
 });

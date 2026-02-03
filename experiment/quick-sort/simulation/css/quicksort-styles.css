@@ -25,6 +25,11 @@
   overflow: visible;
 }
 
+.jsavdisabled {
+  pointer-events: none;
+  opacity: 0.85;
+}
+
 /* Styles to resize array boxes */
 .jsavhorizontalarray .jsavnode {
   line-height: 50px !important;
@@ -83,6 +88,17 @@
     display: block;
     margin-top: 0;
   }
+
+  /* Default observations (no restriction) */
+  .comment-box {
+    overflow: visible;
+  }
+
+  .comment-box.qs-model-active {
+    max-height: 260px; /* desktop-safe */
+    overflow-y: auto;
+  }
+
   #container {
     display: flex;
     flex-direction: column;
@@ -189,4 +205,49 @@
   .buttons-wrapper {
     padding-top: 4%;
   }
+}
+
+/* Small screen – portrait view ONLY */
+@media (max-width: 768px) and (orientation: portrait) {
+  #legend-comment-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .legend {
+    order: 1;
+    width: 100%;
+  }
+
+  .comment-box {
+    width: 100%;
+    order: 2;
+    margin-top: 12px;
+  }
+
+  .jsavcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Move visualization above observations */
+  #jsav {
+    order: 1;
+  }
+}
+
+/* Model Answer text formatting */
+.qs-model-answer {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 0.5rem;
+}
+
+.qs-model-answer b {
+  color: #1a237e;
+}
+
+.qs-model-answer .step {
+  margin-bottom: 0.4rem;
 }
