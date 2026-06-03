@@ -590,19 +590,17 @@ $(document).ready(function () {
   // ================= TEXT-BASED MODEL ANSWER =================
   function showTextModelAnswer() {
     var obs = document.getElementById("qs-observations");
-    var commentBox = document.querySelector(".comment-box");
+    var panel = document.getElementById("model-answer-panel");
     var btn = document.getElementById("model-ans-btn");
 
-    if (!obs || !btn || !commentBox) return;
+    if (!obs || !btn || !panel) return;
 
     if (!isModelAnswerVisible) {
       // SHOW model answer
       obs.classList.remove("qs-success-message");
-      obs.classList.add("qs-model-answer");
-
-      commentBox.classList.add("qs-model-active");
-
-      obs.innerHTML = `
+      panel.classList.add("qs-model-answer");
+      panel.style.display = "block";
+      panel.innerHTML = `
       <b>Model Answer – Quick Sort (High-level Steps)</b><br><br>
 
       <div class="step"><b>Step 1:</b> Choose a pivot element from the array.</div>
@@ -618,10 +616,9 @@ $(document).ready(function () {
       isModelAnswerVisible = true;
     } else {
       // HIDE model answer
-      obs.innerHTML = "";
-      obs.classList.remove("qs-model-answer");
-
-      commentBox.classList.remove("qs-model-active");
+      panel.innerHTML = "";
+      panel.classList.remove("qs-model-answer");
+      panel.style.display = "none";
 
       btn.value = "Model Answer";
       isModelAnswerVisible = false;
