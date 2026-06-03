@@ -3,7 +3,7 @@
   width: auto;
   height: auto;
   overflow-y: visible;
-  overflow-x: hidden;
+  overflow-x: auto;
   padding-top: 2%;
   border: 0;
   background-color: white !important;
@@ -23,6 +23,7 @@
 
 .avcontainer {
   overflow: visible;
+  overflow-x: auto;
 }
 
 .jsavdisabled {
@@ -68,7 +69,9 @@
 
 #legend-comment-wrapper {
   padding-top: 2%;
-  height: 27vh;
+  height: auto;
+  min-height: 27vh;
+  display: flow-root;
 }
 
 @media (max-width: 768px) {
@@ -103,15 +106,7 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-  }
-  #legend-comment-wrapper {
-    order: 1;
-  }
-  .jsavcontainer {
-    order: 2;
-  }
-  .comment-box {
-    order: 3;
+    overflow-x: auto !important;
   }
 }
 
@@ -177,6 +172,20 @@
 .buttons-wrapper {
   text-align: center;
   padding-top: 2%;
+  clear: both;
+}
+
+input.button-input:disabled,
+input.button-input.is-disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+  filter: grayscale(30%);
+}
+
+.model-answer-panel {
+  margin: 1rem auto 0;
+  max-width: 600px;
+  width: 100%;
 }
 
 .legend {
@@ -209,30 +218,24 @@
 
 /* Small screen – portrait view ONLY */
 @media (max-width: 768px) and (orientation: portrait) {
+  .model-answer-panel {
+    order: 3;
+    margin-top: 0.75rem;
+  }
+
   #legend-comment-wrapper {
-    display: flex;
-    flex-direction: column;
+    order: 4;
   }
 
-  .legend {
-    order: 1;
-    width: 100%;
+  .buttons-wrapper {
+    order: 5;
   }
+}
 
-  .comment-box {
-    width: 100%;
-    order: 2;
-    margin-top: 12px;
-  }
-
-  .jsavcontainer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Move visualization above observations */
-  #jsav {
-    order: 1;
+@media (max-width: 768px) and (orientation: landscape) {
+  .model-answer-panel {
+    order: 5;
+    margin-top: 0.75rem;
   }
 }
 
