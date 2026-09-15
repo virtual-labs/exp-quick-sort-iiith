@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. What is the best-case time complexity of Quick Sort when each partition divides the array into two approximately equal parts?",
+      "answers": {
+        "a": "$O(n \\log n)$",
+        "b": "$O(n^2)$",
+        "c": "$O(n)$",
+        "d": "$O(\\log n)$"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. With balanced partitions, there are approximately $\\log_2(n)$ levels of recursion, and each level performs $O(n)$ total partitioning work, giving $O(n \\log n)$ time.",
+        "b": "Incorrect. Quadratic time results from repeatedly highly unbalanced partitions, not approximately equal partitions.",
+        "c": "Incorrect. Each recursion level requires partitioning work across the elements, so the total is greater than linear when multiple levels are required.",
+        "d": "Incorrect. The recursion depth can be logarithmic, but partitioning work at each level also contributes to the total running time."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What is the average-case time complexity of Quick Sort when the pivot selection usually produces reasonably balanced partitions?",
+      "answers": {
+        "a": "$O(n^2)$",
+        "b": "$O(n \\log n)$",
+        "c": "$O(n)$",
+        "d": "$O(\\log n)$"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Quadratic time is associated with repeatedly highly unbalanced partitions and represents the worst-case behavior.",
+        "b": "Correct. Reasonably balanced partitions lead to about $\\log_2(n)$ recursion levels, with $O(n)$ partitioning work per level, giving average-case time $O(n \\log n)$.",
+        "c": "Incorrect. Quick Sort generally requires several partitioning levels, so the total work is greater than linear.",
+        "d": "Incorrect. The logarithmic quantity describes the approximate recursion depth for balanced partitions, not the total running time."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which situation produces the worst-case time complexity of Quick Sort?",
+      "answers": {
+        "a": "The pivot repeatedly divides the array into nearly equal parts.",
+        "b": "The pivot is selected randomly and produces balanced partitions most of the time.",
+        "c": "The pivot repeatedly produces one very small partition and one partition containing almost all remaining elements.",
+        "d": "The array contains elements that are all distinct."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Nearly equal partitions reduce the problem size substantially at each recursion level.",
+        "b": "Incorrect. Balanced partitions generally lead to efficient average-case behavior.",
+        "c": "Correct. Repeatedly producing highly unbalanced partitions creates nearly linear recursion depth and results in $O(n^2)$ time.",
+        "d": "Incorrect. Having distinct elements does not by itself determine whether the partitions will be balanced or unbalanced."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Consider the recurrence $T(n) = 2T(n / 2) + O(n)$ for Quick Sort. What time complexity does this recurrence represent?",
+      "answers": {
+        "a": "$O(n)$",
+        "b": "$O(n^2)$",
+        "c": "$O(\\log n)$",
+        "d": "$O(n \\log n)$"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. The recursive subproblems create multiple levels of work, so the total is greater than linear.",
+        "b": "Incorrect. Quadratic time corresponds to highly unbalanced recursion rather than two approximately half-sized recursive subproblems.",
+        "c": "Incorrect. The logarithmic quantity describes the recursion depth, but each level also performs linear partitioning work.",
+        "d": "Correct. The recurrence has two subproblems of size approximately $n / 2$ and $O(n)$ partitioning work at each level, resulting in $O(n \\log n)$ time."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. In the worst case, Quick Sort can be represented by the recurrence $T(n) = T(n - 1) + O(n)$. What is the resulting time complexity?",
+      "answers": {
+        "a": "$O(n^2)$",
+        "b": "$O(n \\log n)$",
+        "c": "$O(n)$",
+        "d": "$O(\\log n)$"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. The recurrence performs partitioning work on subarrays of sizes approximately $n, n - 1, n - 2, \\ldots$, giving a total proportional to $n^2$.",
+        "b": "Incorrect. This would describe a much more balanced recursion pattern than the one represented by the recurrence.",
+        "c": "Incorrect. The partitioning work is repeated across many decreasing subarray sizes, so it exceeds linear time.",
+        "d": "Incorrect. The recursion depth is linear in this worst-case pattern, not logarithmic."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. What is the typical auxiliary space complexity of recursive Quick Sort when the partitions are reasonably balanced?",
+      "answers": {
+        "a": "$O(n^2)$",
+        "b": "$O(n)$",
+        "c": "$O(\\log n)$",
+        "d": "$O(1)$ in every recursive implementation"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. The recursion stack does not grow quadratically with the input size.",
+        "b": "Incorrect. Linear auxiliary stack space is associated with highly unbalanced recursion rather than balanced recursion.",
+        "c": "Correct. Balanced recursion has a depth of approximately $\\log_2(n)$, so the recursive call stack typically requires $O(\\log n)$ auxiliary space.",
+        "d": "Incorrect. Recursive calls require stack frames, so the auxiliary space is not always constant."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. In the worst case, what can happen to the auxiliary space used by recursive Quick Sort?",
+      "answers": {
+        "a": "It becomes $O(\\log n)$ regardless of the pivot selection.",
+        "b": "It can become $O(n)$ because the recursion depth can become linear.",
+        "c": "It becomes $O(n^2)$ because every comparison creates a stack frame.",
+        "d": "It becomes $O(1)$ because Quick Sort is always in-place."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Logarithmic recursion depth depends on balanced partitioning and is not guaranteed for every pivot selection.",
+        "b": "Correct. Repeatedly highly unbalanced partitions can produce recursion depth proportional to $n$, requiring $O(n)$ stack space.",
+        "c": "Incorrect. A stack frame is associated with an active recursive call, not with every individual comparison.",
+        "d": "Incorrect. In-place partitioning reduces array-storage requirements but does not eliminate recursive call-stack space."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which statement correctly compares Quick Sort with Merge Sort and Heap Sort in terms of standard time complexity?",
+      "answers": {
+        "a": "Quick Sort has $O(n \\log n)$ worst-case time, while Merge Sort has $O(n^2)$ worst-case time.",
+        "b": "Quick Sort has $O(n)$ average-case time, while Heap Sort has $O(\\log n)$ worst-case time.",
+        "c": "Quick Sort has $O(n \\log n)$ average-case time but $O(n^2)$ worst-case time, while Merge Sort and Heap Sort have $O(n \\log n)$ worst-case time.",
+        "d": "All three algorithms have $O(n)$ worst-case time."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. The stated worst-case complexities for Quick Sort and Merge Sort are not correct.",
+        "b": "Incorrect. These bounds are too low to represent the standard sorting complexities of the algorithms mentioned.",
+        "c": "Correct. Quick Sort typically has $O(n \\log n)$ average-case time but can reach $O(n^2)$ in the worst case, whereas Merge Sort and Heap Sort have $O(n \\log n)$ worst-case time.",
+        "d": "Incorrect. Sorting an arbitrary array cannot generally be accomplished in linear worst-case time by these comparison-based algorithms."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Why does Quick Sort have $O(n \\log n)$ time when its partitions are balanced?",
+      "answers": {
+        "a": "There are approximately $\\log_2(n)$ partitioning levels, and the total partitioning work across each level is $O(n)$.",
+        "b": "There are $n$ partitioning levels, and each level performs constant work.",
+        "c": "The algorithm performs only $\\log_2(n)$ comparisons in total.",
+        "d": "The algorithm does not need to process every element during partitioning."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Balanced partitioning reduces the subarray size by roughly half at each level, giving about $\\log_2(n)$ levels, while each level performs a total of $O(n)$ partitioning work.",
+        "b": "Incorrect. Balanced recursion does not create $n$ levels; the number of levels grows logarithmically.",
+        "c": "Incorrect. Quick Sort performs many more than $\\log_2(n)$ comparisons over the entire execution.",
+        "d": "Incorrect. The partitioning process must examine the elements in the current subarray to place them on the appropriate side of the pivot."
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Quick Sort Demo</title>
@@ -117,8 +117,33 @@
     <script src="../../assets/js/instruction-box.js"></script>
     <script>
       function handlers() {
+        function isArraySorted() {
+          var values = $("#container .jsavarray li, #container .jsavcanvas li")
+            .map(function () {
+              var value = $.trim($(this).text());
+              return value === "" ? null : Number(value);
+            })
+            .get()
+            .filter(function (value) {
+              return value !== null && !Number.isNaN(value);
+            });
+
+          if (values.length === 0) {
+            return false;
+          }
+
+          for (var i = 1; i < values.length; i++) {
+            if (values[i - 1] > values[i]) {
+              return false;
+            }
+          }
+
+          return true;
+        }
+
         $("#setup").click(function () {
           $("#setup").prop("disabled", true);
+          $("#next").prop("disabled", false).removeClass("is-disabled");
           displayComment("");
           commentsQueue = [];
           $("#arraysize").val(6);
@@ -127,8 +152,25 @@
         });
 
         $("#next").click(function () {
+          if (isArraySorted()) {
+            displayComment("Done sorting - Finished!!");
+            $("#next").prop("disabled", true).addClass("is-disabled");
+            return;
+          }
+
           $(".jsavforward").click();
-          displayComment(commentsQueue.shift());
+          var nextComment = commentsQueue.shift() || "";
+
+          if (nextComment) {
+            displayComment(nextComment);
+          } else {
+            displayComment("Sorting in progress...");
+          }
+
+          if (isArraySorted()) {
+            displayComment("Done sorting - Finished!!");
+            $("#next").prop("disabled", true).addClass("is-disabled");
+          }
         });
 
         $("#resetArt").click(function () {
