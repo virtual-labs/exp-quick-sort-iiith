@@ -2,6 +2,7 @@
   "unit-type": "lu",
   "label": "Quick Sort",
   "basedir": ".",
+  "LaTeXinMD": "true",
   "code-assessment": {
     "include": true,
     "languages": ["javascript"],
@@ -25,7 +26,7 @@
       "source": "recap.md",
       "target": "recap.html"
     },
-	{
+    {
       "unit-type": "task",
       "label": "Pretest",
       "content-type": "assesment",
@@ -47,7 +48,7 @@
           "source": "overview.md",
           "target": "overview.html"
         },
-	
+
         {
           "unit-type": "task",
           "label": "Pivot Selection and Array Partitioning",
@@ -62,7 +63,7 @@
           "source": "simulation/partition.html",
           "target": "partition.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Recursion and Concatenation",
           "content-type": "video",
@@ -76,25 +77,24 @@
           "source": "simulation/quicksort-demo.html",
           "target": "quicksort-demo.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": " Practice",
           "content-type": "simulation",
           "source": "simulation/quicksort-practice.html",
           "target": "quicksort-practice.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": " Exercise",
           "content-type": "simulation",
           "source": "simulation/quicksort-exercise.html",
           "target": "quicksort-exercise.html"
         }
-      
       ]
     },
-   
-        {
+
+    {
       "unit-type": "lu",
       "label": "Analysis",
       "basedir": "analysis",
@@ -102,7 +102,7 @@
         {
           "unit-type": "aim"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Overview",
           "content-type": "video",
@@ -122,10 +122,17 @@
           "content-type": "video",
           "source": "comparison-with-other-algorithms.md",
           "target": "comparison-with-other-algorithms.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Analysis quiz",
+          "content-type": "assesment",
+          "source": "analysis-quiz.json",
+          "target": "analysis-quiz.html"
         }
       ]
     },
-       {
+    {
       "unit-type": "task",
       "label": "Posttest",
       "content-type": "assesment",
