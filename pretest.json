@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following arrays are sorted in ascending order?",
+      "answers": {
+        "a": "10, 14, 18, 22, 98, 101, 123",
+        "b": "8, 7, 6, 5, 4, 3, 2, 1",
+        "c": "54, 55, 56, 58, 61, 60, 65",
+        "d": "1, 2, 3, 4, 5, 6, 7, 8"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Every element is greater than or equal to the element before it, so the array is sorted in ascending order.",
+        "b": "Incorrect. The elements decrease from left to right, so the array is sorted in descending order.",
+        "c": "Incorrect. The value 60 occurs after 61, so the elements are not in ascending order.",
+        "d": "Incorrect. This array is also sorted in ascending order, but the question asks which option identifies an ascendingly sorted array and option a is the intended single answer."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. You are given the array [9, 5, 3, 8, 1, 2, 10, 11, 8, 12]. What is the index of 2 if the array is 1-indexed?",
+      "answers": {
+        "a": "3",
+        "b": "4",
+        "c": "6",
+        "d": "8"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. The element at index 3 is 3, not 2.",
+        "b": "Incorrect. The element at index 4 is 8, not 2.",
+        "c": "Correct. Counting positions from 1, the value 2 occurs at position 6.",
+        "d": "Incorrect. The element at index 8 is 11, not 2."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. You are given the array [9, 5, 3, 8, 1, 2, 10, 11, 8, 12]. Which sequence gives the original 1-based indices of the elements in their order in the sorted array?",
+      "answers": {
+        "a": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+        "b": "[5, 6, 3, 2, 4, 9, 1, 7, 8, 10]",
+        "c": "[5, 6, 3, 2, 9, 4, 1, 7, 8, 10]",
+        "d": "[7, 4, 3, 5, 1, 2, 8, 9, 6, 10]"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. This sequence is simply the original index order and does not account for sorting.",
+        "b": "Correct. The sorted values are 1, 2, 3, 5, 8, 8, 9, 10, 11, 12. Their original 1-based indices are 5, 6, 3, 2, 4, 9, 1, 7, 8, and 10.",
+        "c": "Incorrect. The two occurrences of 8 are not placed in the correct original-index positions in this sequence.",
+        "d": "Incorrect. This sequence does not place the elements in the correct order of their sorted values."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "4. You are asked to sort an array. After the first partitioning step of Quick Sort, the result is [6, 4, 5, 3, 7, 9, 8, 11, 12]. Which of the following could have been the chosen pivot?",
+      "answers": {
+        "a": "7",
+        "b": "3",
+        "c": "9",
+        "d": "8"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. With 7 as the pivot, all elements smaller than 7 are on its left and all elements larger than 7 are on its right, so this partition is possible.",
+        "b": "Incorrect. If 3 were the pivot, every other element would have to be placed on the side corresponding to values greater than 3; the displayed arrangement does not represent a valid partition around 3.",
+        "c": "Incorrect. The value 8 appears to the right of 9 even though it is smaller than 9, so the displayed arrangement cannot be a partition around 9.",
+        "d": "Incorrect. The value 7 appears to the left of 8, which is smaller than the pivot, so this arrangement does not satisfy the required partition condition for 8."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Consider the following Quick Sort pseudo-code. Which condition can be used for blank (A) when elements smaller than the pivot are placed in smaller_array?<br><pre><code>quick_sort(array) -> sorted-array:<br>    if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>            append array[i] to smaller_array<br>        else if (-----B-----):<br>            append array[i] to bigger_array<br>    return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)</code></pre>",
+      "answers": {
+        "a": "array[i] < array[pivot]",
+        "b": "array[i] > array[pivot]",
+        "c": "array[i] == array[pivot]",
+        "d": "array[i] != array[pivot]"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. An element belongs in smaller_array when its value is less than the pivot value.",
+        "b": "Incorrect. This condition identifies an element larger than the pivot, so it does not match the purpose of smaller_array.",
+        "c": "Incorrect. Equality with the pivot does not identify an element as being smaller than the pivot.",
+        "d": "Incorrect. This condition includes both smaller and larger values, so it cannot specifically identify elements smaller than the pivot."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Using the same Quick Sort pseudo-code, which condition can be used for blank (B) when elements larger than the pivot are placed in bigger_array?",
+      "answers": {
+        "a": "array[i] <= array[pivot]",
+        "b": "array[i] >= array[pivot]",
+        "c": "array[i] == array[pivot]",
+        "d": "array[i] != array[pivot]"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. This condition also includes values equal to the pivot, so it does not specifically identify values larger than the pivot.",
+        "b": "Correct. An element can be placed in bigger_array when its value is greater than or equal to the pivot under this partitioning scheme.",
+        "c": "Incorrect. This condition selects only elements equal to the pivot and does not identify larger elements.",
+        "d": "Incorrect. This condition includes both smaller and larger values and therefore does not specifically identify the bigger partition."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. An array of 16 elements is already sorted. We always pick the first element of the array at each step as the pivot. How many recursion levels will Quick Sort require in the worst-case partition pattern?",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "8",
+        "d": "16"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. A single recursion level would require the partitioning to divide the problem into sufficiently small subarrays immediately.",
+        "b": "Incorrect. Choosing the first element as the pivot for an already sorted array creates highly unbalanced partitions rather than reducing the problem by half.",
+        "c": "Incorrect. Eight levels would correspond to a substantially more balanced partition pattern than the one produced here.",
+        "d": "Correct. The first element is the smallest element at every recursive step, leaving one empty side and a subarray of size one less on the other side. This produces a linear recursion depth of 16 levels under the stated counting convention."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. An array of 16 elements is initially sorted in decreasing order. We always choose the middle element, using the higher of the two middle elements when there is a tie, as the pivot. Approximately how many recursion levels are required when the partitions remain balanced?",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "4",
+        "d": "16"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. One level would not be sufficient to reduce all 16 elements to individual elements through balanced partitioning.",
+        "b": "Incorrect. Two levels of balanced partitioning are insufficient to reduce 16 elements to subarrays of size one.",
+        "c": "Correct. Balanced partitioning approximately halves the subarray size at each level, giving about $\\log_2(16) = 4$ levels.",
+        "d": "Incorrect. Sixteen levels would correspond to highly unbalanced partitions rather than approximately balanced ones."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Bozo-sort repeatedly generates a random permutation of an array and checks whether the array is sorted. Which statement best describes its average-case time complexity and its relation to Quick Sort?",
+      "answers": {
+        "a": "Its average-case time complexity is $O(n)$, so it is generally faster than Quick Sort.",
+        "b": "Its average-case time complexity is $O(n^2)$, which is the same as the average case of Quick Sort.",
+        "c": "Its average-case time complexity is $O(\\log n)$, while Quick Sort takes $O(n)$ on average.",
+        "d": "Its average-case time complexity is factorial, $O(n!)$, making it impractical for normal sorting tasks."
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Randomly generating and testing permutations does not lead to a linear expected running time.",
+        "b": "Incorrect. The expected number of random permutations that may need to be tested grows much faster than a quadratic function.",
+        "c": "Incorrect. Neither the random-permutation approach nor Quick Sort has the stated pair of average-case complexities.",
+        "d": "Correct. There are $n!$ possible permutations, and the expected number of random permutations that may be tested grows factorially, making the method impractical for normal sorting tasks."
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Quick Sort is generally considered to be:",
+      "answers": {
+        "a": "A stable sorting algorithm in every implementation",
+        "b": "An unstable sorting algorithm in every implementation",
+        "c": "Stable only when the input array is already sorted",
+        "d": "Dependent on the implementation; the standard in-place version is generally not stable"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Quick Sort does not preserve the relative order of equal elements in every implementation.",
+        "b": "Incorrect. Stability can depend on how the algorithm is implemented.",
+        "c": "Incorrect. Whether the input is already sorted does not by itself determine stability.",
+        "d": "Correct. Standard in-place Quick Sort is generally not stable, although a specially designed implementation can preserve stability."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Given a random policy for choosing the pivot, when can Quick Sort encounter its worst-case time complexity?",
+      "answers": {
+        "a": "When most chosen pivots are the smallest elements in their respective subarrays",
+        "b": "When most chosen pivots are the largest elements in their respective subarrays",
+        "c": "When most pivots divide their subarrays into two approximately equal parts",
+        "d": "When either a or b occurs repeatedly"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Repeatedly selecting the smallest element creates highly unbalanced partitions, but this is only one of the two extreme patterns described.",
+        "b": "Incorrect. Repeatedly selecting the largest element also creates highly unbalanced partitions, but this is only one of the two extreme patterns described.",
+        "c": "Incorrect. Approximately equal partitions produce a balanced recursion pattern rather than the worst-case pattern.",
+        "d": "Correct. Repeatedly choosing either the smallest or the largest element leaves one partition nearly empty and the other almost unchanged, producing the worst-case $O(n^2)$ time complexity."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "3. Consider the following Quick Sort pseudo-code. Which pair can be selected for blanks (A) and (B) simultaneously so that values smaller than the pivot go to smaller_array and values greater than or equal to the pivot go to bigger_array?<br><pre><code>quick_sort(array) -> sorted-array:<br>    if array is empty: return array<br>    pivot = choose_pivot_index()<br>    smaller_array = [], bigger_array = []<br>    for i = 1 to sizeof(array):<br>        if (-----A-----):<br>            append array[i] to smaller_array<br>        else if (-----B-----):<br>            append array[i] to bigger_array<br>    return quick_sort(smaller_array) + [array[pivot]] + quick_sort(bigger_array)</code></pre>",
+      "answers": {
+        "a": "array[i] < array[pivot] and array[i] >= array[pivot]",
+        "b": "array[i] <= array[pivot] and array[i] > array[pivot]",
+        "c": "array[i] < array[pivot] and array[i] > array[pivot]",
+        "d": "array[i] <= array[pivot] and array[i] >= array[pivot]"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. The first condition sends values strictly smaller than the pivot to smaller_array, while the second condition sends values greater than or equal to the pivot to bigger_array.",
+        "b": "Incorrect. This pair assigns values equal to the pivot to the first condition rather than to the stated bigger partition.",
+        "c": "Incorrect. Values equal to the pivot satisfy neither condition, so the pair does not cover all possible values.",
+        "d": "Incorrect. Values equal to the pivot satisfy the first condition, so they are not handled according to the stated partitioning rule."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "4. What is the average-case time complexity of Quick Sort when pivot selection produces reasonably balanced partitions?",
+      "answers": {
+        "a": "$O(n^2)$",
+        "b": "$O(n)$",
+        "c": "$O(n \\log n)$",
+        "d": "$O(\\log n)$"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Quadratic time occurs in the worst case when partitions are repeatedly highly unbalanced.",
+        "b": "Incorrect. A linear bound is too small because each level of partitioning processes elements and there are multiple levels.",
+        "c": "Correct. Reasonably balanced partitions give approximately $\\log_2(n)$ recursion levels, with about $O(n)$ partitioning work at each level, resulting in $O(n \\log n)$ average-case time.",
+        "d": "Incorrect. The recursion depth can be logarithmic for balanced partitions, but the partitioning work at each level also contributes to the total running time."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. What is the worst-case time complexity of Quick Sort when every partition places only one element on one side of the pivot and all remaining elements on the other side?",
+      "answers": {
+        "a": "$O(n)$",
+        "b": "$O(n \\log n)$",
+        "c": "$O(\\log n)$",
+        "d": "$O(n^2)$"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. The algorithm still performs partitioning work across many recursive levels.",
+        "b": "Incorrect. This complexity corresponds to balanced partitioning rather than repeatedly unbalanced partitioning.",
+        "c": "Incorrect. Although recursion depth is related to the number of levels, the total partitioning work is not logarithmic in this case.",
+        "d": "Correct. With one highly unbalanced partition at every level, the work is approximately $n + (n-1) + (n-2) + \\cdots + 1$, which is $O(n^2)$."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "6. Which statement best describes the auxiliary space complexity of recursive Quick Sort?",
+      "answers": {
+        "a": "It is always $O(1)$ regardless of pivot selection.",
+        "b": "It is typically $O(\\log n)$ for balanced recursion but can become $O(n)$ in the worst case.",
+        "c": "It is always $O(n^2)$ because every partition creates a new array.",
+        "d": "It is always $O(n)$ because Quick Sort stores a complete copy of the input."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Recursive calls require stack space, and the number of active calls depends on the partition balance.",
+        "b": "Correct. Balanced recursive partitions produce logarithmic recursion depth, while highly unbalanced partitions can produce linear recursion depth.",
+        "c": "Incorrect. Recursive Quick Sort does not inherently require quadratic auxiliary storage.",
+        "d": "Incorrect. A standard in-place implementation does not need to store a complete copy of the input array."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Which property of Quick Sort is most directly responsible for its average-case time complexity of $O(n \\log n)$?",
+      "answers": {
+        "a": "The array is divided into approximately equal subarrays over successive partitioning steps.",
+        "b": "Every element is compared with every other element exactly once.",
+        "c": "The algorithm always chooses the smallest element as the pivot.",
+        "d": "The algorithm performs no comparisons after the first partition."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. When partitions are reasonably balanced, the recursion has about $\\log_2(n)$ levels and each level performs a total of approximately $O(n)$ partitioning work.",
+        "b": "Incorrect. Comparing every pair of elements would lead to substantially more work than the average behavior of Quick Sort.",
+        "c": "Incorrect. Consistently choosing the smallest element creates highly unbalanced partitions.",
+        "d": "Incorrect. Quick Sort continues partitioning its subarrays recursively after the first partition."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. If the pivot divides an array of size $n$ into two subarrays of approximately equal size, which recurrence best represents the running time of Quick Sort for that partition pattern?",
+      "answers": {
+        "a": "$T(n) = T(n - 1) + O(1)$",
+        "b": "$T(n) = 2T(n / 2) + O(n)$",
+        "c": "$T(n) = T(n / 2) + O(1)$",
+        "d": "$T(n) = 2T(n) + O(n)$"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. This represents a highly unbalanced recursion pattern with only one subproblem of size close to $n$.",
+        "b": "Correct. Two approximately half-sized subarrays are processed recursively, and partitioning the current array requires linear work, giving $T(n) = 2T(n / 2) + O(n)$.",
+        "c": "Incorrect. The balanced partition produces two recursive subproblems rather than one.",
+        "d": "Incorrect. The recursive subproblems are smaller than the original array; the recurrence does not contain two calls on size $n$."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Which comparison of sorting algorithms is correct for their typical time complexities?",
+      "answers": {
+        "a": "Quick Sort has $O(n \\log n)$ average-case time, while Merge Sort has $O(n \\log n)$ worst-case time.",
+        "b": "Quick Sort has $O(n)$ worst-case time, while Bubble Sort has $O(\\log n)$ worst-case time.",
+        "c": "Quick Sort has $O(\\log n)$ average-case time, while Heap Sort has $O(n)$ worst-case time.",
+        "d": "Quick Sort has $O(n^2)$ average-case time, while Merge Sort has $O(n^2)$ worst-case time."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. With reasonably balanced partitions, Quick Sort has average-case time $O(n \\log n)$, while Merge Sort has worst-case time $O(n \\log n)$.",
+        "b": "Incorrect. The stated worst-case complexities are too low for both algorithms.",
+        "c": "Incorrect. Sorting the input requires processing its elements, so these logarithmic and linear bounds do not describe the stated average and worst cases.",
+        "d": "Incorrect. The stated quadratic average-case complexity for Quick Sort and quadratic worst-case complexity for Merge Sort do not match their standard time-complexity analysis."
+      },
+      "difficulty": "intermediate"
+    }
+  ]
+}
