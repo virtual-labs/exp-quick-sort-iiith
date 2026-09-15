@@ -124,41 +124,57 @@
     <script src="../../assets/js/instruction-box.js"></script>
     <script>
       function handlers() {
-        var doneSeen = false;
+        function isArraySorted() {
+          var values = $("#container .jsavarray li, #container .jsavcanvas li")
+            .map(function () {
+              var value = $.trim($(this).text());
+              return value === "" ? null : Number(value);
+            })
+            .get()
+            .filter(function (value) {
+              return value !== null && !Number.isNaN(value);
+            });
+
+          if (values.length === 0) {
+            return false;
+          }
+
+          for (var i = 1; i < values.length; i++) {
+            if (values[i - 1] > values[i]) {
+              return false;
+            }
+          }
+
+          return true;
+        }
 
         $("#setup").click(function () {
           $("#setup").prop("disabled", true);
           $("#next").prop("disabled", false).removeClass("is-disabled");
-          doneSeen = false;
           displayComment("");
           commentsQueue = [];
           $("#run").click();
         });
 
         $("#next").click(function () {
-          var doneMessage = comments["av_c1"];
-          $(".jsavforward").click();
-          var nextComment = commentsQueue.shift() || "";
-
-          if (nextComment === doneMessage) {
-            if (commentsQueue.length > 0) {
-              doneSeen = true;
-              displayComment("Sorted these involved numbers.");
-            } else {
-              displayComment("Done sorting - Finished!!");
-              doneSeen = true;
-              $("#next").prop("disabled", true).addClass("is-disabled");
-            }
+          if (isArraySorted()) {
+            displayComment("Done sorting - Finished!!");
+            $("#next").prop("disabled", true).addClass("is-disabled");
             return;
           }
 
+          $(".jsavforward").click();
+          var nextComment = commentsQueue.shift() || "";
+
           if (nextComment) {
             displayComment(nextComment);
-          } else if (doneSeen || commentsQueue.length === 0) {
-            displayComment("Done sorting - Finished!!");
-            $("#next").prop("disabled", true).addClass("is-disabled");
           } else {
             displayComment("Sorting in progress...");
+          }
+
+          if (isArraySorted()) {
+            displayComment("Done sorting - Finished!!");
+            $("#next").prop("disabled", true).addClass("is-disabled");
           }
         });
 
@@ -166,7 +182,6 @@
           $("#reset").click();
           $("#setup").prop("disabled", false);
           $("#next").prop("disabled", false).removeClass("is-disabled");
-          doneSeen = false;
           displayComment("");
           commentsQueue = [];
         });
